@@ -1,0 +1,41 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    width: 80rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+
+    
+
+    section {
+        line-height: 3rem;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .mainSection {
+        p a,
+        p a:visited,
+        p a:active {
+            color: #fff;
+            text-decoration: none;
+        }
+        ul {
+            padding: 0 1rem;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        ul li small {
+            margin: 0 2rem;
+            font-size: 1.6rem;
+        }
+    }
+}

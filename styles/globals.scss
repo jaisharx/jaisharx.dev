@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --primary-color: #bd3939;
+    --form-background: #1f1e1e;
+}
+
+html {
+    font-size: 62.8%;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 0;
+    background-color: #222;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+                'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+                'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+::selection {
+    background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    outline: 1px solid var(--primary-color);
+}
