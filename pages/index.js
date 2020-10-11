@@ -21,7 +21,7 @@ function index() {
                     <section className={styles.mainSection}>
                         <p>
                             I'm a self motivated software engineer from
-                            <a href="https://goo.gl/maps/EnVM6sxneq6D7gU4A">{' '} New Delhi, India</a>. I’m currently in my
+                            <a href="https://goo.gl/maps/EnVM6sxneq6D7gU4A"> New Delhi, India</a>. I’m currently in my
                             3rd semester in the computer applications degree. I’ve been tinkering around with many
                             different tech stack and am flexible to adapt to whatever’s in need. But core to my skills
                             are modern web technologies like Reactjs, Nodejs, Typescript, Firebase, Git, and many others
@@ -29,19 +29,13 @@ function index() {
                         </p>
                         I've three rules before taking any projects:
                         <ul>
-                            <li>
-                                <small>✅</small>To write code that has as little as technical debt to it
-                            </li>
-                            <li>
-                                <small>✅</small>Never forget putting helpful comments for future references
-                            </li>
-                            <li>
-                                <small>✅</small>And at last don’t over-promise and under-deliver
-                            </li>
+                            <li>To write code that has as little as technical debt to it</li>
+                            <li>Never forget putting helpful comments for future references</li>
+                            <li>And at last don’t over-promise and under-deliver</li>
                         </ul>
                     </section>
                     <section className={styles.end}>
-                        <strong>About my ideal Job:</strong> My ideal job would be to deal around in tech and handle
+                        <strong>what kind of job I'm looking for?!</strong> My ideal job would be to deal around in tech and handle
                         tasks, make teams, use the team to their fullest, and much more. As there is a paradigm-shift in
                         the types of jobs available, I do not wish to work as a software developer over a mundane desk
                         for 9-5 hrs for five days a week, rather a much more dynamic job that challenges my core skills
