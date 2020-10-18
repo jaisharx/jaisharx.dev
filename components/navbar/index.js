@@ -5,7 +5,7 @@ function index() {
     return (
         <nav className={styles.navbar}>
             <ul>
-                <Link href="/blog">
+                <Link href="/blogs">
                     <a>
                         <li>blog</li>
                     </a>
