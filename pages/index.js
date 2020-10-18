@@ -12,7 +12,7 @@ function index() {
             <div className={styles.mainContainer}>
                 <Sidebar />
                 <main className={styles.container}>
-                    <Header />
+                    <Header title="I'm Jai-Sharma"/>
                     <section className={styles.start}>
                         I’m an avid learner and software engineer. I love taking on unknown tasks and letting the
                         curiosity lead. I casually build websites with different modern stacks for some personal project
