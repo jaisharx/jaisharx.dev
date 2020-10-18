@@ -1,7 +1,6 @@
 import styles from '../../styles/blogs.module.scss';
 
 import Navbar from '../../components/navbar';
-import Header from '../../components/header';
 import Sidebar from '../../components/sidebar';
 import BlogItem from '../../components/blog-item';
 
