@@ -7,7 +7,7 @@ function index() {
             <ul>
                 <Link href="/blogs">
                     <a>
-                        <li>blog</li>
+                        <li>blogs</li>
                     </a>
                 </Link>
                 
