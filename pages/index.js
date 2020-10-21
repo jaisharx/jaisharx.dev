@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/index.module.scss';
 
 import Navbar from '../components/navbar';
+import Title from '../components/title';
 import List from '../components/list';
 import Footer from '../components/footer';
 
@@ -16,10 +17,7 @@ function index() {
                 <main className={styles.main}>
                     <div>
                         <h1>jaisharx</h1>
-                        <div className={styles.title}>
-                            <p>I use GraphQL </p>
-                            <img src="/icons/graphql.svg" alt="GraphQL" />
-                        </div>
+                        <Title />
                     </div>
                 </main>
             </header>
