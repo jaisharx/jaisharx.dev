@@ -1,5 +1,6 @@
 import styles from './list.module.scss';
 import Link from 'next/link';
+import Date from '../date';
 
 function formatDate(date) {
     var d = new Date(date),
@@ -21,7 +22,7 @@ function index({ title, items }) {
             <ul className={styles.list}>
                 {items.map((item) => (
                     <li key={item._id}>
-                        <div>{formatDate(item.createdAt)}</div>
+                        <Date date={item.createdAt}/>
                         <Link href="">
                             <a className={styles.left}>{item.title}</a>
                         </Link>

@@ -1,5 +1,6 @@
 import styles from '../../styles/items.module.scss';
 import Navbar from '../../components/navbar';
+import Date from '../../components/date';
 
 function formatDate(date) {
     var d = new Date(date),
@@ -21,7 +22,7 @@ function index({ projects }) {
                 <ul>
                     {projects.map((project) => (
                         <li key={project._id}>
-                            <time>{formatDate(project.createdAt)}</time>
+                            <Date date={project.createdAt}/>
                             <h1 className={styles.left}>{project.title}</h1>
                             <p>
                                 {project.desc.slice(0, 200)}

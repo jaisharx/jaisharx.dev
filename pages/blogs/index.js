@@ -1,17 +1,6 @@
 import styles from '../../styles/items.module.scss';
 import Navbar from '../../components/navbar';
-
-function formatDate(date) {
-    var d = new Date(date),
-        month = '' + (d.getMonth() + 1),
-        day = '' + d.getDate(),
-        year = d.getFullYear();
-
-    if (month.length < 2) month = '0' + month;
-    if (day.length < 2) day = '0' + day;
-
-    return [year, month, day].join('-');
-}
+import Date from '../../components/date';
 
 function index({ blogs }) {
     return (
@@ -21,11 +10,9 @@ function index({ blogs }) {
                 <ul>
                     {blogs.map((blog) => (
                         <li key={blog._id}>
-                            <time>{formatDate(blog.createdAt)}</time>
+                            <Date date={blog.createdAt}/>
                             <h1 className={styles.left}>{blog.title}</h1>
-                            <p>
-                                {blog.content.slice(0, 200)}
-                            </p>
+                            <p>{blog.content.slice(0, 200)}</p>
                         </li>
                     ))}
                 </ul>

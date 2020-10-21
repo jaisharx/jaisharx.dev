@@ -10,13 +10,8 @@
     li {
         margin-bottom: 4rem;
 
-        time {
-            margin-left: 2px;
-            font-weight: lighter;
-            font-size: 1.4rem;
-        }
-
         h1 {
+            display: inline-block;
             cursor: pointer;
             margin: 0 2px;
             background-image: var(--linear-gradient);
@@ -25,13 +20,11 @@
         }
 
         p {
-            cursor: pointer;
             font-weight: lighter;
             margin: 6px 2px;
         }
     }
 }
-
 
 .left {
     position: relative;
