@@ -3,6 +3,7 @@ import styles from '../styles/index.module.scss';
 
 import Navbar from '../components/navbar';
 import List from '../components/list';
+import Footer from '../components/footer';
 
 function index() {
     return (
@@ -26,7 +27,7 @@ function index() {
                 <List title="Blogs" />
                 <List title="Projects" />
             </section>
-            
+            <Footer />
         </>
     );
 }
