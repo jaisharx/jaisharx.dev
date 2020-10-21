@@ -20,7 +20,7 @@ function index({ blogs }) {
             <main className={styles.container}>
                 <ul>
                     {blogs.map((blog) => (
-                        <li>
+                        <li key={blog._id}>
                             <time>{formatDate(blog.createdAt)}</time>
                             <h1>{blog.title}</h1>
                             <p>

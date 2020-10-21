@@ -20,11 +20,11 @@ function index({ projects }) {
             <main className={styles.container}>
                 <ul>
                     {projects.map((project) => (
-                        <li>
+                        <li key={project._id}>
                             <time>{formatDate(project.createdAt)}</time>
                             <h1>{project.title}</h1>
                             <p>
-                                {/* {project.content.slice(0, 200)} */}
+                                {project.desc.slice(0, 200)}
                             </p>
                         </li>
                     ))}
