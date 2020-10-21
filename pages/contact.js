@@ -1,11 +1,14 @@
-import React from 'react'
+import styles from '../styles/contact.module.scss';
+import Link from 'next/link';
 
 function contact() {
     return (
-        <div>
-            contact
-        </div>
-    )
+        <main className={styles.container}>
+            <button className={styles.close}>
+                <Link href="">X</Link>
+            </button>
+        </main>
+    );
 }
 
-export default contact
+export default contact;

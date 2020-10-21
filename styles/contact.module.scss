@@ -1,0 +1,22 @@
+.container {
+    height: 100vh;
+    background-image: linear-gradient(
+        135deg,
+        var(--primary-color) 30%,
+        var(--secondary-color) 50%
+    );
+    padding: 3rem;
+}
+
+.close {
+    cursor: pointer;
+    background-color: #312e2e;
+    border: 0;
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    
+    a, a:visited, a:active {
+        text-decoration: none;
+        color: white;
+    }
+}
