@@ -1,31 +1,57 @@
 import styles from './navbar.module.scss';
 import Link from 'next/link';
 
-function index() {
+function index({ active, isBack }) {
     return (
         <nav className={styles.navbar}>
             <div className={styles.profile}>
-                <img src="/profile.png" alt="My Profile" />
+                {isBack === 'true' ? (
+                    <Link href="/">
+                        <img
+                            style={{ padding: '1.6rem' }}
+                            src="/assets/left.svg"
+                            alt="Back"
+                        />
+                    </Link>
+                ) : (
+                    <img src="/profile.png" alt="My Profile" />
+                )}
             </div>
             <ul>
                 <li>
                     <Link href="/blogs">
-                        <a>blogs</a>
+                        <a className={active === 'blogs' ? styles.active : ''}>
+                            blogs
+                        </a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/projects">
-                        <a>projects</a>
+                        <a
+                            className={
+                                active === 'projects' ? styles.active : ''
+                            }
+                        >
+                            projects
+                        </a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/resume">
-                        <a>résumé</a>
+                        <a className={active === 'resume' ? styles.active : ''}>
+                            résumé
+                        </a>
                     </Link>
                 </li>
                 <li>
                     <Link href="/contact">
-                        <a>contact Me</a>
+                        <a
+                            className={
+                                active === 'contact' ? styles.active : ''
+                            }
+                        >
+                            contact Me
+                        </a>
                     </Link>
                 </li>
             </ul>

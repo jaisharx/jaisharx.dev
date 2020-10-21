@@ -11,7 +11,7 @@ function index() {
             >
                 @jaisharx
             </a>{' '}
-            with 💛 of Next.js
+            with 💛 of Strapi & Next.js
             <small>© 2020</small>
         </footer>
     );

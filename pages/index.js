@@ -22,7 +22,7 @@ function index({ blogs, projects }) {
                 </main>
             </header>
             <section className={styles.section}>
-                <List title="Blogs" items={blogs}/>
+                <List title="Blogs" items={blogs} />
                 <List title="Projects" items={projects} />
             </section>
             <Footer />
@@ -43,8 +43,9 @@ export async function getStaticProps() {
     return {
         props: {
             blogs,
-            projects
+            projects,
         },
+        revalidate: 10,
     };
 }
 

@@ -16,7 +16,7 @@ function formatDate(date) {
 function index({ title, items }) {
     return (
         <div className={styles.container}>
-            <h2>Top {title}</h2>
+            <h2>Latest {title}</h2>
 
             <ul className={styles.list}>
                 {items.map((item) => (
