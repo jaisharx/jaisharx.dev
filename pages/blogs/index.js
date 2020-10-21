@@ -1,13 +1,8 @@
-import styles from '../../styles/blogs.module.scss';
-
-import Navbar from '../../components/navbar';
-import Sidebar from '../../components/sidebar';
-import BlogItem from '../../components/blog-item';
 
 function index({ blogs }) {
     return (
         <>
-            <Navbar />
+            {/* <Navbar />
             <div className={styles.mainContainer}>
                 <Sidebar />
                 <main className={styles.container}>
@@ -21,7 +16,7 @@ function index({ blogs }) {
                         ))}
                     </ul>
                 </main>
-            </div>
+            </div> */}
         </>
     );
 }

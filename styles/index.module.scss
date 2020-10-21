@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap');
+
+.container {
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 12rem);
+    
+    h1 {
+        font-family: 'Poiret One', cursive;
+        user-select: none;
+        background-color: teal;
+        background-size: 100%;
+        background-repeat: repeat;
+        background-image: linear-gradient(
+            45deg,
+            var(--primary-color) 32.5%,
+            var(--secondary-color) 50.5%
+        );
+        font-size: 16rem;
+        margin: 0;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: translateY(-6rem);
+    }
+}
+
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transform: translateY(-8rem);
+    letter-spacing: .4rem;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+    img {
+        margin-left: 4px;
+        width: 25px;
+        height: 25px;
+    }
+}
