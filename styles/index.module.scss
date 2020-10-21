@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
 
 .container {
     height: 100vh;
@@ -36,11 +36,15 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    transform: translateY(-8rem);
+    transform: translateY(-7rem);
     letter-spacing: .4rem;
     font-style: italic;
-    font-weight: lighter;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Grandstander', cursive;
+
+    p {
+        margin: 0;
+        margin-top: 2px;
+    }
 
     img {
         margin-left: 4px;

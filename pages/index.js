@@ -1,10 +1,15 @@
+import Head from 'next/head';
 import styles from '../styles/index.module.scss';
 
 import Navbar from '../components/navbar';
+import List from '../components/list';
 
 function index() {
     return (
         <>
+            <Head>
+                <title>jaisharx.dev</title>
+            </Head>
             <header className={styles.container}>
                 <Navbar />
                 <main className={styles.main}>
@@ -17,6 +22,11 @@ function index() {
                     </div>
                 </main>
             </header>
+            <section>
+                <List title="Blogs" />
+                <List title="Projects" />
+            </section>
+            
         </>
     );
 }
