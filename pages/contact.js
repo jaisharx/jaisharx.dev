@@ -4,9 +4,9 @@ import Link from 'next/link';
 function contact() {
     return (
         <main className={styles.container}>
-            <button className={styles.close}>
+            {/* <button className={styles.close}>
                 <Link href="">X</Link>
-            </button>
+            </button> */}
         </main>
     );
 }
