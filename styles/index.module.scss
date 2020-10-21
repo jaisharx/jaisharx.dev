@@ -19,9 +19,17 @@
         background-image: var(--linear-gradient);
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        
+        @media screen and (max-width: 900px) {
+            font-size: 12rem;
+        }
     }
 }
 
 .section {
     display: flex;
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }
 }
