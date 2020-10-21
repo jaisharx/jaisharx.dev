@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './title.module.scss';
 
-const titles = ['ReactJs', 'Typescript', 'GraphQL', 'Git'];
+const titles = ['Ansible', 'Typescript', 'GraphQL', 'Git'];
 
 export default class index extends React.Component {
     constructor(props) {
@@ -16,7 +16,7 @@ export default class index extends React.Component {
             <div className={styles.title}>
                 <p>I use {titles[this.state.index]} </p>
                 <img
-                    src={`/preview-icons/${titles[this.state.index]}.svg`}
+                    src={`/icons/${titles[this.state.index].toLowerCase()}.svg`}
                     alt="GraphQL"
                 />
             </div>

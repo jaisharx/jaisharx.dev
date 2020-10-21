@@ -1,47 +1,32 @@
 import styles from './list.module.scss';
 import Link from 'next/link';
 
-function index({ title }) {
+function formatDate(date) {
+    var d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) month = '0' + month;
+    if (day.length < 2) day = '0' + day;
+
+    return [year, month, day].join('-');
+}
+
+function index({ title, items }) {
     return (
         <div className={styles.container}>
             <h2>Top {title}</h2>
+
             <ul className={styles.list}>
-                <li>
-                    <div>20th september 2020</div>
-                    <Link href="">
-                        <a>How to do Auth?</a>
-                    </Link>
-                </li>
-                <li>
-                    <div>20th september 2020</div>
-                    <Link href="">
-                        <a>Do you love docker too?</a>
-                    </Link>
-                </li>
-                <li>
-                    <div>20th september 2020</div>
-                    <Link href="">
-                        <a>How to use styled-components?</a>
-                    </Link>
-                </li>
-                <li>
-                    <div>20th september 2020</div>
-                    <Link href="">
-                        <a>Why you should not write your auth?</a>
-                    </Link>
-                </li>
-                <li>
-                    <div>20th september 2020</div>
-                    <Link href="">
-                        <a>Move fast with javascript and typescript.</a>
-                    </Link>
-                </li>
-                <li>
-                    <div>20th september 2020</div>
-                    <Link href="">
-                        <a>Take control of your code.</a>
-                    </Link>
-                </li>
+                {items.map((item) => (
+                    <li key={item._id}>
+                        <div>{formatDate(item.createdAt)}</div>
+                        <Link href="">
+                            <a>{item.title}</a>
+                        </Link>
+                    </li>
+                ))}
             </ul>
         </div>
     );

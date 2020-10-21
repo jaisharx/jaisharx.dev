@@ -6,7 +6,7 @@ import Title from '../components/title';
 import List from '../components/list';
 import Footer from '../components/footer';
 
-function index() {
+function index({ blogs, projects }) {
     return (
         <>
             <Head>
@@ -21,13 +21,31 @@ function index() {
                     </div>
                 </main>
             </header>
-            <section>
-                <List title="Blogs" />
-                <List title="Projects" />
+            <section className={styles.section}>
+                <List title="Blogs" items={blogs}/>
+                <List title="Projects" items={projects} />
             </section>
             <Footer />
         </>
     );
+}
+
+export async function getStaticProps() {
+    const blogResponse = await fetch(
+        'https://strapi-cms-backend.herokuapp.com/blogs'
+    );
+    const projectResponse = await fetch(
+        'https://strapi-cms-backend.herokuapp.com/projects'
+    );
+    const blogs = await blogResponse.json();
+    const projects = await projectResponse.json();
+
+    return {
+        props: {
+            blogs,
+            projects
+        },
+    };
 }
 
 export default index;
