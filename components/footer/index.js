@@ -11,7 +11,7 @@ function index() {
             >
                 @jaisharx
             </a>{' '}
-            with love of NextJs
+            with 💘 of Next.js
             <small>© 2020</small>
         </footer>
     );
