@@ -19,11 +19,7 @@
         h1 {
             cursor: pointer;
             margin: 0 2px;
-            background-image: linear-gradient(
-                45deg,
-                var(--primary-color) 32.5%,
-                var(--secondary-color) 50.5%
-            );
+            background-image: var(--linear-gradient);
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -34,4 +30,26 @@
             margin: 6px 2px;
         }
     }
+}
+
+
+.left {
+    position: relative;
+}
+
+.left::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    background-image: var(--linear-gradient);
+}
+
+.left:hover::before {
+    visibility: visible;
+    width: 100%;
 }

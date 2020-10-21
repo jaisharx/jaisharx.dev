@@ -22,7 +22,7 @@ function index({ blogs }) {
                     {blogs.map((blog) => (
                         <li key={blog._id}>
                             <time>{formatDate(blog.createdAt)}</time>
-                            <h1>{blog.title}</h1>
+                            <h1 className={styles.left}>{blog.title}</h1>
                             <p>
                                 {blog.content.slice(0, 200)}
                             </p>

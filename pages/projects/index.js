@@ -22,7 +22,7 @@ function index({ projects }) {
                     {projects.map((project) => (
                         <li key={project._id}>
                             <time>{formatDate(project.createdAt)}</time>
-                            <h1>{project.title}</h1>
+                            <h1 className={styles.left}>{project.title}</h1>
                             <p>
                                 {project.desc.slice(0, 200)}
                             </p>

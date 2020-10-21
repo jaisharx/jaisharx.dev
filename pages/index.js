@@ -32,10 +32,10 @@ function index({ blogs, projects }) {
 
 export async function getStaticProps() {
     const blogResponse = await fetch(
-        'https://strapi-cms-backend.herokuapp.com/blogs'
+        'https://strapi-cms-backend.herokuapp.com/blogs?_limit=5'
     );
     const projectResponse = await fetch(
-        'https://strapi-cms-backend.herokuapp.com/projects'
+        'https://strapi-cms-backend.herokuapp.com/projects?_limit=5'
     );
     const blogs = await blogResponse.json();
     const projects = await projectResponse.json();

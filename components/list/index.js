@@ -23,7 +23,7 @@ function index({ title, items }) {
                     <li key={item._id}>
                         <div>{formatDate(item.createdAt)}</div>
                         <Link href="">
-                            <a>{item.title}</a>
+                            <a className={styles.left}>{item.title}</a>
                         </Link>
                     </li>
                 ))}
