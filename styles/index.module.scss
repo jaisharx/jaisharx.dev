@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
 
 .container {
     height: 100vh;
@@ -10,20 +9,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 12rem);
+    height: calc(100vh - 25rem);
 
     h1 {
         font-family: 'Poiret One', cursive;
         user-select: none;
-        background-color: teal;
-        background-size: 100%;
-        background-repeat: repeat;
-        background-image: var(--linear-gradient);
         font-size: 16rem;
         margin: 0;
+        background-image: var(--linear-gradient);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        transform: translateY(-6rem);
     }
 }
 

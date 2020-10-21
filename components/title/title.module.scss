@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
+
+
 .title {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    transform: translateY(-7rem);
     letter-spacing: 0.4rem;
     font-style: italic;
+    transform: translateY(-1rem);
     font-family: 'Grandstander', cursive;
 
     p {
