@@ -17,7 +17,7 @@ function contact() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            01. Twitter
+                            <img src="/contact/twitter.png" alt="" /> Twitter
                         </a>
                     </li>
                     <li>
@@ -26,12 +26,12 @@ function contact() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            02. Github
+                            <img src="/contact/github.png" alt="" /> Github
                         </a>
                     </li>
                     <li>
                         <a href="https://dev.to/jaisharx" target="_blank" rel="noopener noreferrer">
-                            03. Dev.to
+                            <img src="/contact/devto.png" alt="" /> Dev.to
                         </a>
                     </li>
                     <li>
@@ -40,11 +40,13 @@ function contact() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            04. Medium
+                            <img src="/contact/medium.png" alt="" /> Medium
                         </a>
                     </li>
                     <li>
-                        <a href="">05. Good ol' Mail</a>
+                        <a href="mailto:sendtojsharma@gmail.com">
+                            <img src="/contact/gmail.png" alt="" /> Write a mail
+                        </a>
                     </li>
                 </ul>
             </div>
