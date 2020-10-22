@@ -1,9 +1,13 @@
 import styles from '../styles/contact.module.scss';
 import Navbar from '../components/navbar';
+import Head from 'next/head';
 
 function contact() {
     return (
         <>
+            <Head>
+                <title>jaisharx.dev | Contact Me</title>
+            </Head>
             <Navbar active="contact" isBack="true" />
             <div className={styles.container}>
                 <ul>
@@ -26,11 +30,7 @@ function contact() {
                         </a>
                     </li>
                     <li>
-                        <a
-                            href="https://dev.to/jaisharx"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        <a href="https://dev.to/jaisharx" target="_blank" rel="noopener noreferrer">
                             03. Dev.to
                         </a>
                     </li>

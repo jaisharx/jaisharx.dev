@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+.container {
+    width: 80rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+        cursor: pointer;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+        border: 8px solid #eee;
+
+        &:hover {
+            transform: scale(1.2);
+            border: 8px solid var(--primary-color);
+        }
+    }
+}
+
+.main {
+    margin: 6rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #222;
+}
+
+.mainSection {
+    ul {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        list-style: none;
+        
+        li::before {
+            content: '\2705';
+            margin-right: 1.4rem;
+        }
+    }
+}
+
+.signature {
+    font-family: 'Sacramento', cursive;
+    margin-top: 3rem;
+    font-size: 6rem;
+    text-align: right;
+}

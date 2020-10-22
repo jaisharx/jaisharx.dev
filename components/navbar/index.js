@@ -37,9 +37,9 @@ function index({ active, isBack }) {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/resume">
-                        <a className={active === 'resume' ? styles.active : ''}>
-                            résumé
+                    <Link href="/about">
+                        <a className={active === 'about' ? styles.active : ''}>
+                            about
                         </a>
                     </Link>
                 </li>
