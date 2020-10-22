@@ -1,25 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import styles from './title.module.scss';
+import titles from './titlesList';
 
-const titles = ['Node'];
 
-export default class index extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            index: 0,
+function index() {
+    const [counter, setCounter] = useState(0);
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            if (counter > titles.length - 2) return setCounter(0);
+            setCounter(counter + 1);
+        }, 2000);
+
+        return () => {
+            clearTimeout(timeout);
         };
-    }
+    }, [counter]);
 
-    render() {
-        return (
-            <div className={styles.title}>
-                <p>I use {titles[this.state.index]} </p>
-                <img
-                    src={`/icons/${titles[this.state.index].toLowerCase()}.svg`}
-                    alt="GraphQL"
-                />
-            </div>
-        );
-    }
+    return (
+        <div className={styles.title}>
+            <p>I use {titles[counter]}</p>
+            <img src={`/icons/${titles[counter]}.svg`} alt="Icon" />
+        </div>
+    );
 }
+
+export default index;
