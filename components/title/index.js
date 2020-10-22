@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styles from './title.module.scss';
-import titles from './titlesList';
 
 function index() {
     // const [counter, setCounter] = useState(0);
