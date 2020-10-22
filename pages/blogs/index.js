@@ -1,7 +1,9 @@
 import styles from '../../styles/items.module.scss';
 import Navbar from '../../components/navbar';
 import Date from '../../components/date';
+import Footer from '../../components/footer';
 import Head from 'next/head';
+
 
 function index({ blogs }) {
     return (
@@ -23,6 +25,7 @@ function index({ blogs }) {
                     </ul>
                 </main>
             </header>
+            <Footer />
         </>
     );
 }

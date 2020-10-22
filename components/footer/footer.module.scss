@@ -1,5 +1,5 @@
 .footer {
-    padding: 12rem;
+    padding: 10rem;
     text-align: center;
     font-weight: lighter;
 
@@ -20,7 +20,7 @@
         font-size: 1.2rem;
     }
 
-    @media screen and (max-width: 900px) {
-        padding: 6rem;
+    @media screen and (max-width: 500px) {
+        padding: 4rem;
     }
 }

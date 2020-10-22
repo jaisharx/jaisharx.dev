@@ -6,6 +6,11 @@
     h2 {
         font-weight: lighter;
         margin-left: 6rem;
+
+        @media screen and (max-width: 640px) {
+            margin-left: 2.4rem;
+        }
+
     }
 
     @media (max-width: 900px) {
@@ -17,11 +22,21 @@
 .list {
     list-style-type: none;
 
+    @media screen and (max-width: 640px) {
+        padding: 0;
+    }
+
+
     li {
         padding: 3.6rem;
         font-weight: bold;
         font-size: 2rem;
 
+        @media screen and (max-width: 640px) {
+            padding: 2.8rem;
+        }
+    
+        
         a,
         a:visited,
         a:active {
@@ -30,6 +45,10 @@
             background-image: var(--linear-gradient);
             background-clip: text;
             -webkit-text-fill-color: transparent;
+            
+            @media screen and (max-width: 640px) {
+                font-size: 1.8rem;
+            }
         }
 
         div {

@@ -1,6 +1,7 @@
 import styles from '../../styles/items.module.scss';
 import Navbar from '../../components/navbar';
 import Date from '../../components/date';
+import Footer from '../../components/footer';
 import Head from 'next/head';
 
 function formatDate(date) {
@@ -37,7 +38,7 @@ function index({ projects }) {
                     </ul>
                 </main>
             </header>
-
+            <Footer />
         </>
     );
 }
