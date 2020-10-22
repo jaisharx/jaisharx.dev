@@ -20,7 +20,7 @@ function index() {
     return (
         <div className={styles.title}>
             <p>I use {titles[counter]}</p>
-            <img src={`/icons/${titles[counter]}.svg`} alt="Icon" />
+            <img src={`/icons/${titles[counter].toLowerCase()}.svg`} alt="Icon" />
         </div>
     );
 }
