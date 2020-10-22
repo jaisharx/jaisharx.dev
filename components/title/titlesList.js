@@ -22,7 +22,6 @@ export default [
     'Nextjs',
     'Nginx',
     'Node',
-    'Npm',
     'Powershell',
     'Prettier',
     'Python',
