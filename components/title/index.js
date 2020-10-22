@@ -2,25 +2,48 @@ import React, { useEffect, useState } from 'react';
 import styles from './title.module.scss';
 import titles from './titlesList';
 
-
 function index() {
-    const [counter, setCounter] = useState(0);
+    // const [counter, setCounter] = useState(0);
 
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            if (counter > titles.length - 2) return setCounter(0);
-            setCounter(counter + 1);
-        }, 2000);
+    // useEffect(() => {
+    //     const timeout = setTimeout(() => {
+    //         if (counter > titles.length - 2) return setCounter(0);
+    //         setCounter(counter + 1);
+    //     }, 2000);
 
-        return () => {
-            clearTimeout(timeout);
-        };
-    }, [counter]);
+    //     return () => {
+    //         clearTimeout(timeout);
+    //     };
+    // }, [counter]);
 
     return (
-        <div className={styles.title}>
-            <p>I use {titles[counter]}</p>
-            <img src={`/icons/${titles[counter].toLowerCase()}.svg`} alt="Icon" />
+        <div class={styles.contentSlider}>
+            <div class={styles.slider}>
+                <div class={styles.mask}>
+                    <ul>
+                        <li class={styles.anim1}>
+                            <p>I use Javascript</p>
+                            <img src="/icons/javascript.svg" alt="Icon" />
+                        </li>
+                        <li class={styles.anim2}>
+                            <p>I use Typescript</p>
+                            <img src="/icons/typescript.svg" alt="Icon" />
+                        </li>
+                        <li class={styles.anim3}>
+                            <p>I use ReactJs</p>
+                            <img src="/icons/reactjs.svg" alt="Icon" />
+                        </li>
+                        <li class={styles.anim4}>
+                            <p>I use Docker</p>
+                            <img src="/icons/docker.svg" alt="Icon" />
+                        </li>
+                        <li class={styles.anim5}>
+                            <p>I use Vscode</p>
+                            <img src="/icons/vscode.svg" alt="Icon" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     );
 }
