@@ -5,4 +5,9 @@
     margin-top: 3rem;
     font-size: 6rem;
     text-align: right;
+
+    @media screen and (max-width: 640px) {
+        margin-top: 2rem;
+        text-align: center;
+    }
 }
