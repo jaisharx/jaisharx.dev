@@ -10,7 +10,7 @@ function blog({ blog }) {
         <ProgressWrapper>
             <header>
                 <Navbar isBack="true" active="blogs" />
-            </header>
+            </header>            
             <PageData data={blog} />
             <p className={styles.signatureContainer}>
                 <Signature />

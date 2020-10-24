@@ -31,6 +31,21 @@ class MyDocument extends Document {
                     <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
                     <meta name="msapplication-TileColor" content="#da532c" />
                     <meta name="theme-color" content="#ffffff"></meta>
+
+                    <link
+                        rel="stylesheet"
+                        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/monokai-sublime.min.css"
+                    />
+                    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+                    <script
+                        charset="UTF-8"
+                        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/java.min.js"
+                    ></script>
+                    <script
+                        charset="UTF-8"
+                        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/xml.min.js"
+                    ></script>
+                    <script>hljs.initHighlightingOnLoad();</script>
                 </Head>
                 <body>
                     <Main />
