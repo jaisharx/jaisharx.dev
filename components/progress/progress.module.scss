@@ -1,0 +1,17 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+.progressContainer {
+    height: 4px;
+    width: 100%;
+}
+
+.progressBar {
+    background-image: var(--linear-gradient);
+    height: 4px;
+    width: 10%;
+}

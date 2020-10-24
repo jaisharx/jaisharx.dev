@@ -2,16 +2,17 @@ import styles from '../../styles/eachpage.module.scss';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import PageData from '../../components/page-data';
+import ProgressWrapper from '../../components/progress';
 
 function blog({ blog }) {
     return (
-        <>
+        <ProgressWrapper>
             <header>
                 <Navbar isBack="true" active="blogs" />
             </header>
             <PageData data={blog} />
             <Footer />
-        </>
+        </ProgressWrapper>
     );
 }
 
