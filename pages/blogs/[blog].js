@@ -1,7 +1,7 @@
 import styles from '../../styles/eachpage.module.scss';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import Blog from '../../components/blog';
+import PageData from '../../components/page-data';
 
 function blog({ blog }) {
     return (
@@ -9,7 +9,7 @@ function blog({ blog }) {
             <header>
                 <Navbar isBack="true" active="blogs" />
             </header>
-            <Blog data={blog} />
+            <PageData data={blog} />
             <Footer />
         </>
     );

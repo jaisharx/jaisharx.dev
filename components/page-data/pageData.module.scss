@@ -1,10 +1,10 @@
 .container {
-    width: 88rem;
     margin: auto;
 
     .title {
-        font-size: 3.4rem;
-        margin: 2rem 0;
+
+        font-size: 4rem;
+        // margin: 2rem -2rem;
 
         background-image: var(--linear-gradient);
         background-clip: text;
@@ -13,10 +13,12 @@
 }
 
 .markdown {
+
     img {
         display: block;
-        margin: auto;
-        max-width: 100%;
+        margin: 2rem auto;
+        width: 100vw;
+        background-size: cover;
     }
 
     p:not(:nth-child(1)) {
@@ -24,7 +26,15 @@
         margin: 1.4rem auto;
         padding: 1.2rem;
         max-width: 95%;
-        
+        font-weight: lighter;
+
+        width: 70vw;
+        margin: auto;
+    }
+
+    h3, h4 {
+        width: 70vw;
+        margin: auto;
     }
 
     p:nth-child(2)::first-letter {
@@ -39,5 +49,11 @@
 
     h4 {
         font-size: 1.8rem;
+    }
+
+    a, a:visited, a:active {
+        font-style: italic;
+        text-decoration: none;
+        color: black;
     }
 }

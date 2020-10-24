@@ -5,7 +5,7 @@ function index({ data }) {
     const blog = data[0];
     return (
         <main className={styles.container}>
-            <h1 className={styles.title}>{blog.title}</h1>
+            {/* <h1 className={styles.title}>{blog.title}</h1> */}
             <MarkdownView
                 className={styles.markdown}
                 markdown={blog.content}

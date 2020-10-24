@@ -1,7 +1,7 @@
 import styles from '../../styles/eachpage.module.scss';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import Blog from '../../components/blog';
+import PageData from '../../components/page-data';
 
 function project({ project }) {
     return (
@@ -9,7 +9,7 @@ function project({ project }) {
             <header>
                 <Navbar isBack="true" active="projects" />
             </header>
-            <Blog data={project} />
+            <PageData data={project} />
             <Footer />
         </>
     );
