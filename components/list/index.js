@@ -23,7 +23,7 @@ function index({ title, items }) {
                 {items.map((item) => (
                     <li key={item._id}>
                         <Date date={item.createdAt}/>
-                        <Link href="">
+                        <Link href={`${title.toLowerCase()}/${item.slug}`}>
                             <a className={styles.left}>{item.title}</a>
                         </Link>
                     </li>

@@ -3,7 +3,7 @@ import Navbar from '../../components/navbar';
 import Date from '../../components/date';
 import Footer from '../../components/footer';
 import Head from 'next/head';
-
+import Link from 'next/link';
 
 function index({ blogs }) {
     return (
@@ -18,7 +18,9 @@ function index({ blogs }) {
                         {blogs.map((blog) => (
                             <li key={blog._id}>
                                 <Date date={blog.createdAt} />
-                                <h1 className={styles.left}>{blog.title}</h1>
+                                <Link href={`/blogs/${blog.slug}`}>
+                                    <a className={styles.left}>{blog.title}</a>
+                                </Link>
                                 <p>{blog.content.slice(0, 200)}</p>
                             </li>
                         ))}

@@ -3,6 +3,7 @@ import Navbar from '../../components/navbar';
 import Date from '../../components/date';
 import Footer from '../../components/footer';
 import Head from 'next/head';
+import Link from 'next/link';
 
 function formatDate(date) {
     var d = new Date(date),
@@ -28,11 +29,11 @@ function index({ projects }) {
                     <ul>
                         {projects.map((project) => (
                             <li key={project._id}>
-                                <Date date={project.createdAt}/>
-                                <h1 className={styles.left}>{project.title}</h1>
-                                <p>
-                                    {project.desc.slice(0, 200)}
-                                </p>
+                                <Date date={project.createdAt} />
+                                <Link href={`/projects/${project.slug}`}>
+                                    <a className={styles.left}>{project.title}</a>
+                                </Link>
+                                <p>{project.desc.slice(0, 200)}</p>
                             </li>
                         ))}
                     </ul>
