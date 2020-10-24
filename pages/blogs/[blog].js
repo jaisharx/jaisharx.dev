@@ -1,6 +1,7 @@
 import styles from '../../styles/eachpage.module.scss';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
+import Signature from '../../components/signature';
 import PageData from '../../components/page-data';
 import ProgressWrapper from '../../components/progress';
 
@@ -11,6 +12,9 @@ function blog({ blog }) {
                 <Navbar isBack="true" active="blogs" />
             </header>
             <PageData data={blog} />
+            <p className={styles.signatureContainer}>
+                <Signature />
+            </p>
             <Footer />
         </ProgressWrapper>
     );

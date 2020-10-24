@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Navbar from '../components/navbar';
+import Signature from '../components/signature';
 import styles from '../styles/about.module.scss';
 
 function resume() {
@@ -45,7 +46,7 @@ function resume() {
                             well as my soft skills to the fullest everyday, pushing me and the
                             product I'm working on to new limits everytime :)
                         </section>
-                        <div className={styles.signature}>jai sharma</div>
+                        <Signature />
                     </main>
                 </div>
             </div>
