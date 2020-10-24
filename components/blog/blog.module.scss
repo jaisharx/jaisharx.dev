@@ -1,4 +1,43 @@
 .container {
     width: 88rem;
     margin: auto;
+
+    .title {
+        font-size: 3.4rem;
+        margin: 2rem 0;
+
+        background-image: var(--linear-gradient);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.markdown {
+    img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+    }
+
+    p:not(:nth-child(1)) {
+        font-size: 1.8rem;
+        margin: 1.4rem auto;
+        padding: 1.2rem;
+        max-width: 95%;
+        
+    }
+
+    p:nth-child(2)::first-letter {
+        font-size: 6rem;
+        line-height: 1.1rem;
+        color: var(--primary-color);
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
 }

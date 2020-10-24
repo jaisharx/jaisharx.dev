@@ -1,5 +1,6 @@
 import styles from '../../styles/eachpage.module.scss';
 import Navbar from '../../components/navbar';
+import Footer from '../../components/footer';
 import Blog from '../../components/blog';
 
 function project({ project }) {
@@ -7,8 +8,9 @@ function project({ project }) {
         <>
             <header>
                 <Navbar isBack="true" active="projects" />
-                <Blog content={project[0].content} />
             </header>
+            <Blog data={project} />
+            <Footer />
         </>
     );
 }
