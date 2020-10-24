@@ -7,7 +7,7 @@ function project({ project }) {
         <>
             <header>
                 <Navbar isBack="true" active="projects" />
-                <Blog content={project[0].desc} />
+                <Blog content={project[0].content} />
             </header>
         </>
     );
