@@ -3,7 +3,6 @@ import Navbar from '../../components/navbar';
 import Blog from '../../components/blog';
 
 function project({ project }) {
-    console.log(project);
     return (
         <>
             <header>
