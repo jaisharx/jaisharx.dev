@@ -1,4 +1,4 @@
-import styles from './blog.module.scss';
+import styles from './pageData.module.scss';
 import MarkdownView from 'react-showdown';
 
 function index({ data }) {
