@@ -14,7 +14,7 @@ function resume() {
                 <div className={styles.container}>
                     <img src="/assets/profile.png" alt="Profile Image" />
 
-                    <main className={styles.main}>
+                    {/* <main className={styles.main}>
                         <section className={styles.start}>
                             I’m an avid learner and software engineer. I love taking on unknown
                             tasks and letting the curiosity lead. I casually build websites with
@@ -47,7 +47,7 @@ function resume() {
                             product I'm working on to new limits everytime :)
                         </section>
                         <Signature />
-                    </main>
+                    </main> */}
                 </div>
             </div>
         </>
