@@ -12,9 +12,9 @@ function project({ project }) {
                 <Navbar isBack="true" active="projects" />
             </header>
             <PageData data={project} />
-            <p className={styles.signatureContainer}>
+            <div className={styles.signatureContainer}>
                 <Signature />
-            </p>
+            </div>
             <Footer />
         </ProgressWrapper>
     );

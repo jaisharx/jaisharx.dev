@@ -12,9 +12,9 @@ function blog({ blog }) {
                 <Navbar isBack="true" active="blogs" />
             </header>            
             <PageData data={blog} />
-            <p className={styles.signatureContainer}>
+            <div className={styles.signatureContainer}>
                 <Signature />
-            </p>
+            </div>
             <Footer />
         </ProgressWrapper>
     );

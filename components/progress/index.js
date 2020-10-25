@@ -5,15 +5,18 @@ function index({ children }) {
     const [width, setWidth] = useState(0);
 
     const progressBarScroll = () => {
-        const scrollY = window.scrollY / document.body.scrollHeight;
-        setWidth(scrollY * 120);
+        const amountScrolled = window.pageYOffset;
+        const totaltHeight = document.body.clientHeight - window.innerHeight;
+
+        const scrolledPercentage = (amountScrolled / totaltHeight) * 100;
+        setWidth(scrolledPercentage);
     };
 
     useEffect(() => {
         window.addEventListener('scroll', progressBarScroll, true);
         return () => {
             window.removeEventListener('scroll', progressBarScroll);
-        }
+        };
     }, []);
 
     return (
@@ -23,9 +26,7 @@ function index({ children }) {
                     <div className={styles.progressBar} style={{ width: width + '%' }}></div>
                 </div>
             </div>
-            <div>
-                {children}
-            </div>
+            <div>{children}</div>
         </>
     );
 }
