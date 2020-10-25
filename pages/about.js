@@ -11,45 +11,89 @@ function resume() {
                 <title>jaisharx.dev | About</title>
             </Head>
             <Fade top>
-                <div>
-                    <Navbar active="about" isBack="true" />
-                    <div className={styles.container}>
-                        <img src="/assets/profile.png" alt="Profile Image" />
-
-                        {/* <main className={styles.main}>
-                        <section className={styles.start}>
-                            I’m an avid learner and software engineer. I love taking on unknown
-                            tasks and letting the curiosity lead. I casually build websites with
-                            different modern stacks for some personal project or not-so-personal
-                            projects. I absolutely love programming allows for someone to achieve.
+                <Navbar active="about" isBack="true" />
+                <div className={styles.container}>
+                    <h1>Welcome</h1>
+                    <main className={styles.main}>
+                        <section>
+                            Hey, there! Nice to have you around. You're on my personal website right
+                            now. I build this as an onespot online collection for all my thoughts
+                            and projects. Like a diary that I could maintain for myself and others
+                            who're interested in the same.
                         </section>
-                        <section className={styles.mainSection}>
+                        <section>
                             <p>
-                                I'm a self motivated software engineer from New Delhi, India. I’m
-                                currently in my 3rd semester in the computer applications degree.
-                                I’ve been tinkering around with many different tech stack and am
-                                flexible to adapt to whatever’s in need. But core to my skills are
-                                modern web technologies like Reactjs, Nodejs, Typescript, Firebase,
-                                Git, and many others similar tools.
+                                I'm a self motivated software engineer from New Delhi , India. I’m
+                                currently pursuing my computer applications degree. I’ve been
+                                tinkering around with many different tech stacks and am flexible to
+                                adapt to whatever’s in need. But core to my skills are modern web
+                                technologies like{' '}
+                                <a
+                                    href="https://reactjs.org/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Reactjs
+                                </a>{' '}
+                                ,{' '}
+                                <a
+                                    href="https://nodejs.org/en/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Nodejs
+                                </a>{' '}
+                                ,{' '}
+                                <a
+                                    href="https://www.typescriptlang.org/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Typescript
+                                </a>{' '}
+                                ,{' '}
+                                <a
+                                    href="https://firebase.google.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Firebase
+                                </a>{' '}
+                                ,{' '}
+                                <a
+                                    href="https://git-scm.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Git
+                                </a>{' '}
+                                and many others similar tools.
                             </p>
-                            I've three rules before taking any projects:
-                            <ul>
-                                <li>To write code that has as little as technical debt to it</li>
-                                <li>Never forget putting helpful comments for future self</li>
-                                <li>And at last don’t over-promise and under-deliver</li>
-                            </ul>
                         </section>
-                        <section className={styles.end}>
-                            My ideal job would be to deal around in tech and handle tasks, make
-                            teams, use the team to their fullest, and much more. As there is a
-                            paradigm-shift in the types of jobs available, I do not wish to work as
-                            a software developer over a mundane desk for 9-5 hrs for five days a
-                            week, rather a much more dynamic job that challenges my core skills as
-                            well as my soft skills to the fullest everyday, pushing me and the
-                            product I'm working on to new limits everytime :)
+                        <section>
+                            You can checkout my github profile{' '}
+                            <a
+                                href="https://github.com/jaisharx"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                here
+                            </a>
+                            . I write many different apps/projects with the latest and greatest
+                            technologies like javascript, typescript, graphql, css3, docker, and
+                            many more. Being able to write bunch of instructions and make dumb
+                            computers do the heavy-lifting for you is similar to a superpower in
+                            modern world. Just like{' '}
+                            <a href="https://nav.al/rich" target="_blank" rel="noopener noreferrer">
+                                naval ravikant
+                            </a>{' '}
+                            talks about how code and media are the new leverage of the modern world.
+                            Go ahead and checkout more of this website.
+                            <p className={styles.goodbye}>Happy Learning ✌</p>
                         </section>
+                    </main>
+                    <div className={styles.signContainer}>
                         <Signature />
-                    </main> */}
                     </div>
                 </div>
             </Fade>
