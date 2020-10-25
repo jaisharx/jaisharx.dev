@@ -23,7 +23,7 @@ function index({ projects }) {
                                     <Link href={`/projects/${project.slug}`}>
                                         <a className={styles.left}>{project.title}</a>
                                     </Link>
-                                    <p>{project.desc.slice(0, 200)}</p>
+                                    <p>{project.desc}</p>
                                 </li>
                             ))}
                         </ul>

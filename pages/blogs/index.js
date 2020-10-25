@@ -23,7 +23,7 @@ function index({ blogs }) {
                                     <Link href={`/blogs/${blog.slug}`}>
                                         <a className={styles.left}>{blog.title}</a>
                                     </Link>
-                                    <p>{blog.content.slice(0, 200)}</p>
+                                    <p>{blog.desc}</p>
                                 </li>
                             ))}
                         </ul>

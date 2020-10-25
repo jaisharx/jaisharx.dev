@@ -1,7 +1,7 @@
 .container {
-    max-width: 110rem;
+    max-width: 90rem;
     margin: 0 auto;
-    padding: 6rem 6rem 0 6rem;
+    padding: 3rem 3rem 0 3rem;
 
     @media screen and (max-width: 640px) {
         margin-top: 2rem;
@@ -15,10 +15,7 @@
 
     ul {
         list-style-type: none;
-
-        @media screen and (max-width: 900px) {
-            padding: 0;
-        }
+        padding: 0;
     }
 
     li {
@@ -46,6 +43,7 @@
         }
 
         p {
+
             font-weight: lighter;
             margin: 6px 2px;
         }
