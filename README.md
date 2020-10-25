@@ -4,6 +4,7 @@
 ## Getting started
 
 I've build this using the latest and greatest [Nextjs]() framework of react.
+
 It really helps you with pain point of building an app with react.
 
 You can close and run the website locally:
