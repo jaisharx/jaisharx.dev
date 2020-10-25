@@ -4,18 +4,7 @@ import Date from '../../components/date';
 import Footer from '../../components/footer';
 import Head from 'next/head';
 import Link from 'next/link';
-
-function formatDate(date) {
-    var d = new Date(date),
-        month = '' + (d.getMonth() + 1),
-        day = '' + d.getDate(),
-        year = d.getFullYear();
-
-    if (month.length < 2) month = '0' + month;
-    if (day.length < 2) day = '0' + day;
-
-    return [year, month, day].join('-');
-}
+import { Fade } from 'react-awesome-reveal';
 
 function index({ projects }) {
     return (
@@ -23,23 +12,25 @@ function index({ projects }) {
             <Head>
                 <title>jaisharx.dev | Projects</title>
             </Head>
-            <header>
-                <Navbar active="projects" isBack="true" />
-                <main className={styles.container}>
-                    <ul>
-                        {projects.map((project) => (
-                            <li key={project._id}>
-                                <Date date={project.createdAt} />
-                                <Link href={`/projects/${project.slug}`}>
-                                    <a className={styles.left}>{project.title}</a>
-                                </Link>
-                                <p>{project.desc.slice(0, 200)}</p>
-                            </li>
-                        ))}
-                    </ul>
-                </main>
-            </header>
-            <Footer />
+            <Fade top>
+                <header>
+                    <Navbar active="projects" isBack="true" />
+                    <main className={styles.container}>
+                        <ul>
+                            {projects.map((project) => (
+                                <li key={project._id}>
+                                    <Date date={project.createdAt} />
+                                    <Link href={`/projects/${project.slug}`}>
+                                        <a className={styles.left}>{project.title}</a>
+                                    </Link>
+                                    <p>{project.desc.slice(0, 200)}</p>
+                                </li>
+                            ))}
+                        </ul>
+                    </main>
+                </header>
+                <Footer />
+            </Fade>
         </>
     );
 }

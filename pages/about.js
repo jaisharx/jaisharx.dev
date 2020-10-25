@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Navbar from '../components/navbar';
 import Signature from '../components/signature';
 import styles from '../styles/about.module.scss';
+import { Fade } from 'react-awesome-reveal';
 
 function resume() {
     return (
@@ -9,12 +10,13 @@ function resume() {
             <Head>
                 <title>jaisharx.dev | About</title>
             </Head>
-            <div>
-                <Navbar active="about" isBack="true" />
-                <div className={styles.container}>
-                    <img src="/assets/profile.png" alt="Profile Image" />
+            <Fade top>
+                <div>
+                    <Navbar active="about" isBack="true" />
+                    <div className={styles.container}>
+                        <img src="/assets/profile.png" alt="Profile Image" />
 
-                    {/* <main className={styles.main}>
+                        {/* <main className={styles.main}>
                         <section className={styles.start}>
                             I’m an avid learner and software engineer. I love taking on unknown
                             tasks and letting the curiosity lead. I casually build websites with
@@ -48,8 +50,9 @@ function resume() {
                         </section>
                         <Signature />
                     </main> */}
+                    </div>
                 </div>
-            </div>
+            </Fade>
         </>
     );
 }
