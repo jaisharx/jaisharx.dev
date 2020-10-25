@@ -38,11 +38,11 @@ class MyDocument extends Document {
                     />
                     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
                     <script
-                        charset="UTF-8"
+                        charSet="UTF-8"
                         src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/java.min.js"
                     ></script>
                     <script
-                        charset="UTF-8"
+                        charSet="UTF-8"
                         src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/xml.min.js"
                     ></script>
                     <script>hljs.initHighlightingOnLoad();</script>
