@@ -1,6 +1,6 @@
 import styles from '../../styles/items.module.scss';
 import Navbar from '../../components/navbar';
-import Date from '../../components/date';
+import TimeStamp from '../../components/timestamp';
 import Footer from '../../components/footer';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -19,7 +19,7 @@ function Blogs({ blogs }) {
                         <ul>
                             {blogs.map((blog) => (
                                 <li key={blog._id}>
-                                    <Date date={blog.createdAt} />
+                                    <TimeStamp createAt={blog.createdAt} />
                                     <Link href={`/blogs/${blog.slug}`}>
                                         <a className={styles.left}>{blog.title}</a>
                                     </Link>

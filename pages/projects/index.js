@@ -1,6 +1,6 @@
 import styles from '../../styles/items.module.scss';
 import Navbar from '../../components/navbar';
-import Date from '../../components/date';
+import TimeStamp from '../../components/timestamp';
 import Footer from '../../components/footer';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -19,7 +19,7 @@ function Projects({ projects }) {
                         <ul>
                             {projects.map((project) => (
                                 <li key={project._id}>
-                                    <Date date={project.createdAt} />
+                                    <TimeStamp createAt={project.createdAt} />
                                     <Link href={`/projects/${project.slug}`}>
                                         <a className={styles.left}>{project.title}</a>
                                     </Link>

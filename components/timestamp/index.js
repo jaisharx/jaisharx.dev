@@ -27,8 +27,8 @@ function formatDate(date) {
     return `${month} ${day}, ${year}`;
 }
 
-function Date({ date }) {
-    return <time className={styles.date}>{formatDate(date)}</time>;
+function TimeStamp({ createAt }) {
+    return <time className={styles.date}>{formatDate(createAt)}</time>;
 }
 
-export default Date;
+export default TimeStamp;

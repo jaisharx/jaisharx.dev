@@ -1,6 +1,6 @@
 import styles from './style.module.scss';
 import Link from 'next/link';
-import Date from '../date';
+import TimeStamp from '../timestamp';
 
 function List({ title, items }) {
     return (
@@ -10,7 +10,7 @@ function List({ title, items }) {
             <ul className={styles.list}>
                 {items.map((item) => (
                     <li key={item._id}>
-                        <Date date={item.createdAt}/>
+                        <TimeStamp createAt={item.createdAt} />
                         <Link href={`${title.toLowerCase()}/${item.slug}`}>
                             <a className={styles.left}>{item.title}</a>
                         </Link>

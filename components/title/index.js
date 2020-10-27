@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styles from './styles.module.scss';
+import styles from './style.module.scss';
 
 function Title() {
     return (
