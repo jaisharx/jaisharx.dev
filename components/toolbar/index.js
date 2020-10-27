@@ -1,6 +1,6 @@
-import styles from './toolbar.module.scss';
+import styles from './style.module.scss';
 
-function index() {
+function Toolbar() {
     return (
         <div className={styles.container}>
             <img src="/profile.png" alt="Profile Image" />
@@ -16,4 +16,4 @@ function index() {
     );
 }
 
-export default index;
+export default Toolbar;

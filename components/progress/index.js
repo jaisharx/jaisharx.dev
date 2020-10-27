@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
-import styles from './progress.module.scss';
+import styles from './style.module.scss';
 
-function index({ children }) {
+function Progress({ children }) {
     const [width, setWidth] = useState(0);
 
     const progressBarScroll = () => {
@@ -31,4 +31,4 @@ function index({ children }) {
     );
 }
 
-export default index;
+export default Progress;

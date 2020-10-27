@@ -1,8 +1,8 @@
-import styles from './pageData.module.scss';
+import styles from './style.module.scss';
 import Toolbar from '../toolbar';
 import MarkdownView from 'react-showdown';
 
-function index({ data }) {
+function PageData({ data }) {
     const blog = data[0];
     return (
         <main className={styles.container}>
@@ -17,4 +17,4 @@ function index({ data }) {
     );
 }
 
-export default index;
+export default PageData;

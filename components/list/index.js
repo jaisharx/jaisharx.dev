@@ -1,20 +1,8 @@
-import styles from './list.module.scss';
+import styles from './style.module.scss';
 import Link from 'next/link';
 import Date from '../date';
 
-function formatDate(date) {
-    var d = new Date(date),
-        month = '' + (d.getMonth() + 1),
-        day = '' + d.getDate(),
-        year = d.getFullYear();
-
-    if (month.length < 2) month = '0' + month;
-    if (day.length < 2) day = '0' + day;
-
-    return [year, month, day].join('-');
-}
-
-function index({ title, items }) {
+function List({ title, items }) {
     return (
         <div className={styles.container}>
             <h2>Latest {title}</h2>
@@ -33,4 +21,4 @@ function index({ title, items }) {
     );
 }
 
-export default index;
+export default List;

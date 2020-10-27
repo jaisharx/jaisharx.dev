@@ -1,7 +1,7 @@
-import styles from './signature.module.scss';
+import styles from './style.module.scss';
 
-function index() {
+function Signature() {
     return <div className={styles.signature}>jai sharma</div>;
 }
 
-export default index;
+export default Signature;

@@ -4,7 +4,7 @@ import Signature from '../components/signature';
 import styles from '../styles/about.module.scss';
 import { Fade } from 'react-awesome-reveal';
 
-function resume() {
+function About() {
     return (
         <>
             <Head>
@@ -101,4 +101,4 @@ function resume() {
     );
 }
 
-export default resume;
+export default About;

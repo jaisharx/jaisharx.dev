@@ -6,7 +6,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { Fade } from 'react-awesome-reveal';
 
-function index({ blogs }) {
+function Blogs({ blogs }) {
     return (
         <>
             <Head>
@@ -47,4 +47,4 @@ export async function getStaticProps() {
     };
 }
 
-export default index;
+export default Blogs;

@@ -5,7 +5,7 @@ import Signature from '../../components/signature';
 import PageData from '../../components/page-data';
 import ProgressWrapper from '../../components/progress';
 
-function blog({ blog }) {
+function Blog({ blog }) {
     return (
         <ProgressWrapper>
             <header>
@@ -43,4 +43,4 @@ export async function getStaticProps({ params }) {
     };
 }
 
-export default blog;
+export default Blog;

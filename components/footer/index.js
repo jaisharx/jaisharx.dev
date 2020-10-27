@@ -1,6 +1,6 @@
-import styles from './footer.module.scss';
+import styles from './style.module.scss';
 
-function index() {
+function Footer() {
     return (
         <footer className={styles.footer}>
             Made by{' '}
@@ -17,4 +17,4 @@ function index() {
     );
 }
 
-export default index;
+export default Footer;

@@ -1,7 +1,7 @@
-import styles from './navbar.module.scss';
+import styles from './style.module.scss';
 import Link from 'next/link';
 
-function index({ active, isBack }) {
+function Navbar({ active, isBack }) {
     return (
         <nav className={styles.navbar}>
             <div className={styles.profile}>
@@ -59,4 +59,4 @@ function index({ active, isBack }) {
     );
 }
 
-export default index;
+export default Navbar;

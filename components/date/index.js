@@ -1,4 +1,4 @@
-import styles from './date.module.scss';
+import styles from './style.module.scss';
 
 function formatDate(date) {
     const monthsList = [
@@ -27,8 +27,8 @@ function formatDate(date) {
     return `${month} ${day}, ${year}`;
 }
 
-function index({ date }) {
+function Date({ date }) {
     return <time className={styles.date}>{formatDate(date)}</time>;
 }
 
-export default index;
+export default Date;

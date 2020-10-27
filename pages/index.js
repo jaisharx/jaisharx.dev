@@ -7,7 +7,7 @@ import List from '../components/list';
 import Footer from '../components/footer';
 import { Fade } from 'react-awesome-reveal';
 
-function index({ blogs, projects }) {
+function Index({ blogs, projects }) {
     return (
         <>
             <Head>
@@ -50,4 +50,4 @@ export async function getStaticProps() {
     };
 }
 
-export default index;
+export default Index;

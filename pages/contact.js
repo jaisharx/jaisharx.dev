@@ -3,7 +3,7 @@ import Navbar from '../components/navbar';
 import { Fade } from 'react-awesome-reveal';
 import Head from 'next/head';
 
-function contact() {
+function Contact() {
     return (
         <>
             <Head>
@@ -61,4 +61,4 @@ function contact() {
     );
 }
 
-export default contact;
+export default Contact;
