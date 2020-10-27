@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "clean": "shx rm -rf .next .vercel"
   },
   "dependencies": {
     "firebase": "^7.24.0",
@@ -16,5 +17,8 @@
     "react-icons": "^3.11.0",
     "react-showdown": "^2.1.0",
     "sass": "^1.27.0"
+  },
+  "devDependencies": {
+    "shx": "^0.3.3"
   }
 }
