@@ -12,9 +12,10 @@ function Blogs({ blogs }) {
             <Head>
                 <title>jaisharx.dev | Blogs</title>
             </Head>
-            <Fade top>
-                <header>
-                    <Navbar active="blogs" isBack="true" />
+
+            <header>
+                <Navbar active="blogs" isBack="true" />
+                <Fade top>
                     <main className={styles.container}>
                         <ul>
                             {blogs.map((blog) => (
@@ -28,9 +29,9 @@ function Blogs({ blogs }) {
                             ))}
                         </ul>
                     </main>
-                </header>
-                <Footer />
-            </Fade>
+                </Fade>
+            </header>
+            <Footer />
         </>
     );
 }

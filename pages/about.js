@@ -10,8 +10,8 @@ function About() {
             <Head>
                 <title>jaisharx.dev | About</title>
             </Head>
+            <Navbar active="about" isBack="true" />
             <Fade top>
-                <Navbar active="about" isBack="true" />
                 <div className={styles.container}>
                     <h1>Welcome</h1>
                     <main className={styles.main}>

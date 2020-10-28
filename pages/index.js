@@ -13,22 +13,22 @@ function Index({ blogs, projects }) {
             <Head>
                 <title>jaisharx.dev</title>
             </Head>
-            <Fade top>
-                <header className={styles.container}>
-                    <Navbar />
+            <header className={styles.container}>
+                <Navbar />
+                <Fade top>
                     <main className={styles.main}>
                         <div>
                             <h1>jaisharx</h1>
                             <Title />
                         </div>
                     </main>
-                </header>
-                <section className={styles.section}>
-                    <List title="Blogs" items={blogs} />
-                    <List title="Projects" items={projects} />
-                </section>
-                <Footer />
-            </Fade>
+                </Fade>
+            </header>
+            <section className={styles.section}>
+                <List title="Blogs" items={blogs} />
+                <List title="Projects" items={projects} />
+            </section>
+            <Footer />
         </>
     );
 }

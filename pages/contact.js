@@ -9,8 +9,8 @@ function Contact() {
             <Head>
                 <title>jaisharx.dev | Contact Me</title>
             </Head>
+            <Navbar active="contact" isBack="true" />
             <Fade top>
-                <Navbar active="contact" isBack="true" />
                 <div className={styles.container}>
                     <ul>
                         <li>

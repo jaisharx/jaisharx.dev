@@ -12,9 +12,10 @@ function Projects({ projects }) {
             <Head>
                 <title>jaisharx.dev | Projects</title>
             </Head>
-            <Fade top>
-                <header>
-                    <Navbar active="projects" isBack="true" />
+
+            <header>
+                <Navbar active="projects" isBack="true" />
+                <Fade top>
                     <main className={styles.container}>
                         <ul>
                             {projects.map((project) => (
@@ -28,9 +29,9 @@ function Projects({ projects }) {
                             ))}
                         </ul>
                     </main>
-                </header>
-                <Footer />
-            </Fade>
+                </Fade>
+            </header>
+            <Footer />
         </>
     );
 }
