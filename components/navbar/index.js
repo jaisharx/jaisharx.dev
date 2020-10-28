@@ -1,5 +1,6 @@
 import styles from './style.module.scss';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function Navbar({ active, isBack }) {
     return (
@@ -14,7 +15,7 @@ function Navbar({ active, isBack }) {
                         />
                     </Link>
                 ) : (
-                    <img src="/profile.png" alt="My Profile" />
+                    <Image src="/profile.png" alt="My Profile" width="60" height="60" />
                 )}
             </div>
             <ul>
