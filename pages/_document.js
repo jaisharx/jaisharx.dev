@@ -32,7 +32,7 @@ class MyDocument extends Document {
                     <meta name="msapplication-TileColor" content="#da532c" />
                     <meta name="theme-color" content="#ffffff"></meta>
 
-                    <link
+                    {/* <link
                         rel="stylesheet"
                         href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/monokai-sublime.min.css"
                     />
@@ -45,7 +45,7 @@ class MyDocument extends Document {
                         charSet="UTF-8"
                         src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/xml.min.js"
                     ></script>
-                    <script>hljs.initHighlightingOnLoad();</script>
+                    <script>hljs.initHighlightingOnLoad();</script> */}
                 </Head>
                 <body>
                     <Main />
