@@ -6,15 +6,17 @@ function Navbar({ active, isBack }) {
     return (
         <nav className={styles.navbar}>
             <div className={styles.profile}>
-                <div className={styles.imageContainer}>
-                    {isBack === 'true' ? (
-                        <Link href="/">
+                {isBack === 'true' ? (
+                    <Link href="/">
+                        <div className={styles.imageContainer}>
                             <img src="/assets/left.svg" alt="Back" />
-                        </Link>
-                    ) : (
-                        <img src="/assets/home.svg" alt="My Profile" />
-                    )}
-                </div>
+                        </div>
+                    </Link>
+                ) : (
+                    <div className={styles.imageContainer}>
+                        <img src="/assets/home.svg" alt="Home" />
+                    </div>
+                )}
             </div>
             <ul>
                 <li>
