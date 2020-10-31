@@ -13,65 +13,32 @@ function About() {
             <Navbar active="about" isBack="true" />
             <Fade top>
                 <div className={styles.container}>
-                    <h1>holà</h1>
+                    <p className={styles.title}>नमस्ते</p>
                     <main className={styles.main}>
                         <section>
-                            Hey, there! Nice to have you around. You're on my personal website right
-                            now. I build this as an onespot online collection for all my thoughts
+                            Hi, there! Nice to have you around. You're on my personal website right
+                            now. I built this as an one-spot online collection for all my thoughts
                             and projects. Like a diary that I could maintain for myself and others
-                            who're interested in the same.
+                            like me interested in the tech, philosophy, or future.
                         </section>
                         <section>
                             <p>
-                                I'm a self motivated software engineer from New Delhi , India. I’m
-                                currently pursuing my computer applications degree. I’ve been
-                                tinkering around with many different tech stacks and am flexible to
-                                adapt to whatever’s in need. But core to my skills are modern web
-                                technologies like{' '}
+                                Little about me, I'm a self-motivated software engineer from{' '}
                                 <a
-                                    href="https://reactjs.org/"
+                                    href="https://goo.gl/maps/hGX2ZTEAuCGypeZE6"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    Reactjs
+                                    New Delhi, India
                                 </a>
-                                ,{' '}
-                                <a
-                                    href="https://nodejs.org/en/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Nodejs
-                                </a>
-                                ,{' '}
-                                <a
-                                    href="https://www.typescriptlang.org/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Typescript
-                                </a>
-                                ,{' '}
-                                <a
-                                    href="https://firebase.google.com/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Firebase
-                                </a>
-                                ,{' '}
-                                <a
-                                    href="https://git-scm.com/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Git
-                                </a>{' '}
-                                and many others similar tools.
+                                . Currently pursuing my computer applications degree. Huge fan of
+                                soccer and believe in the motto of keeping yourself fit and strong.
+                                You'll not only find tech-related stuff but also my fitness journey
+                                here.
                             </p>
                         </section>
                         <section>
-                            You can checkout my github profile{' '}
+                            You can check out my GitHub profile{' '}
                             <a
                                 href="https://github.com/jaisharx"
                                 target="_blank"
@@ -79,17 +46,49 @@ function About() {
                             >
                                 here
                             </a>
-                            . I write many different apps/projects with the latest and greatest
-                            technologies like javascript, typescript, graphql, css3, docker, and
-                            many more. Being able to write bunch of instructions and make dumb
-                            computers do the heavy-lifting for you is similar to a superpower in
-                            modern world. Just like{' '}
-                            <a href="https://nav.al/rich" target="_blank" rel="noopener noreferrer">
-                                naval ravikant
-                            </a>{' '}
-                            talks about how code and media are the new leverage of the modern world.
-                            Go ahead and checkout more of this website.
-                            <p>Happy Learning!</p>
+                            . I regularly build many different apps & projects with the latest and
+                            greatest technologies like{' '}
+                            <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Javascript
+                            </a>
+                            ,{' '}
+                            <a
+                                href="https://www.typescriptlang.org/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Typescript
+                            </a>
+                            ,{' '}
+                            <a
+                                href="https://graphql.org/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GraphQL
+                            </a>
+                            ,{' '}
+                            <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
+                                Nextjs
+                            </a>
+                            ,{' '}
+                            <a
+                                href="https://www.docker.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Docker
+                            </a>
+                            , and many more. Being able to write a bunch of instructions and make
+                            the dumb computer do the heavy lifting for you is no less than a
+                            superpower in the modern world (just like how naval ravikant talks about
+                            code and media being the new leverage). Alright, enough intro, now go
+                            ahead and check out more of this website.
+                            <p className={styles.goodbye}>Happy Learning.</p>
                         </section>
                     </main>
                     <div className={styles.signContainer}>

@@ -2,17 +2,16 @@
     max-width: 95rem;
     margin: auto;
 
-    h1 {
-        display: block;
-        text-align: left;
+    .title {
+        text-align: center;
+        font-size: 6rem;
         font-weight: 800;
         margin: 1rem 0;
-        font-size: 4rem;
 
+        border-bottom: 2px solid var(--primary-color);
         background-image: var(--linear-gradient);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        border-bottom: 2px solid var(--primary-color);
     }
 
     @media screen and (max-width: 900px) {
@@ -41,24 +40,26 @@
             background-image: var(--linear-gradient);
         }
     }
-
 }
 
 .main {
     margin: 3rem 0;
     font-size: 2.2rem;
-    // font-weight: 300;
+    font-weight: 300;
     color: #222;
     font-style: italic;
-    
+
     @media screen and (max-width: 500px) {
         font-size: 1.8rem;
     }
-
 }
 
 .signContainer {
     @media screen and (max-width: 650px) {
         display: none;
     }
+}
+
+.goodbye {
+    font-weight: normal;
 }
