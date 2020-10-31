@@ -7,7 +7,7 @@ function PageData({ data }) {
     return (
         <main className={styles.container}>
             <h1 className={styles.title}>{blog.title}</h1>
-            <Toolbar />
+            {/* <Toolbar /> */}
             <MarkdownView
                 className={styles.markdown}
                 markdown={blog.content}
