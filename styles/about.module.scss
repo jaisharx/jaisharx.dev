@@ -1,13 +1,12 @@
 .container {
-    width: 85vw;
-    max-width: 100rem;
+    max-width: 95rem;
     margin: auto;
 
     h1 {
         display: block;
         text-align: left;
         font-weight: 800;
-        margin: 0;
+        margin: 1rem 0;
         font-size: 4rem;
 
         background-image: var(--linear-gradient);
@@ -47,8 +46,8 @@
 
 .main {
     margin: 3rem 0;
-    font-size: 2rem;
-    font-weight: 300;
+    font-size: 2.2rem;
+    // font-weight: 300;
     color: #222;
     font-style: italic;
     
@@ -57,11 +56,6 @@
     }
 
 }
-
-.goodbye {
-    font-style: normal;
-}
-
 
 .signContainer {
     @media screen and (max-width: 650px) {

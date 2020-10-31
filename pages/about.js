@@ -13,7 +13,7 @@ function About() {
             <Navbar active="about" isBack="true" />
             <Fade top>
                 <div className={styles.container}>
-                    <h1>Welcome</h1>
+                    <h1>holà</h1>
                     <main className={styles.main}>
                         <section>
                             Hey, there! Nice to have you around. You're on my personal website right
@@ -34,7 +34,7 @@ function About() {
                                     rel="noopener noreferrer"
                                 >
                                     Reactjs
-                                </a>{' '}
+                                </a>
                                 ,{' '}
                                 <a
                                     href="https://nodejs.org/en/"
@@ -42,7 +42,7 @@ function About() {
                                     rel="noopener noreferrer"
                                 >
                                     Nodejs
-                                </a>{' '}
+                                </a>
                                 ,{' '}
                                 <a
                                     href="https://www.typescriptlang.org/"
@@ -50,7 +50,7 @@ function About() {
                                     rel="noopener noreferrer"
                                 >
                                     Typescript
-                                </a>{' '}
+                                </a>
                                 ,{' '}
                                 <a
                                     href="https://firebase.google.com/"
@@ -58,7 +58,7 @@ function About() {
                                     rel="noopener noreferrer"
                                 >
                                     Firebase
-                                </a>{' '}
+                                </a>
                                 ,{' '}
                                 <a
                                     href="https://git-scm.com/"
@@ -89,7 +89,7 @@ function About() {
                             </a>{' '}
                             talks about how code and media are the new leverage of the modern world.
                             Go ahead and checkout more of this website.
-                            <p className={styles.goodbye}>Happy Learning ✌</p>
+                            <p>Happy Learning!</p>
                         </section>
                     </main>
                     <div className={styles.signContainer}>

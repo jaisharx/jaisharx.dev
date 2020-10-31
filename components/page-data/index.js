@@ -1,6 +1,6 @@
 import styles from './style.module.scss';
-import Toolbar from '../toolbar';
 import MarkdownView from 'react-showdown';
+// import Toolbar from '../toolbar';
 
 function PageData({ data }) {
     const blog = data[0];
