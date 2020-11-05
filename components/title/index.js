@@ -11,7 +11,7 @@ function Title() {
             list.push(
                 <div className={styles.text}>
                     <p>I use {name}</p>
-                    <Image src={`/icons/${name}.svg`} width="30" height="30" alt="Icon" />
+                    <img src={`/icons/${name}.svg`} width="30" height="30" alt="Icon" />
                 </div>
             );
         });
