@@ -16,6 +16,7 @@ function Title() {
                         height="30"
                         alt="Icon"
                         loading="eager"
+                        priority="true"
                         src={`/icons/${name.toLowerCase()}.svg`}
                     />
                 </div>
