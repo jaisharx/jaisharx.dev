@@ -1,35 +1,31 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import TextLoop from 'react-text-loop';
+import Image from 'next/image';
+import TechNames from './titlesList';
 import styles from './style.module.scss';
 
 function Title() {
-    return (
-        <div className={styles.contentSlider}>
-            <div className={styles.slider}>
-                <div className={styles.mask}>
-                    <ul>
-                        <li className={styles.anim1}>
-                            <p>I use Javascript</p>
-                            <img src="/icons/javascript.svg" alt="Icon" />
-                        </li>
-                        <li className={styles.anim2}>
-                            <p>I use Typescript</p>
-                            <img src="/icons/typescript.svg" alt="Icon" />
-                        </li>
-                        <li className={styles.anim3}>
-                            <p>I use ReactJs</p>
-                            <img src="/icons/reactjs.svg" alt="Icon" />
-                        </li>
-                        <li className={styles.anim4}>
-                            <p>I use Docker</p>
-                            <img src="/icons/docker.svg" alt="Icon" />
-                        </li>
-                        <li className={styles.anim5}>
-                            <p>I use Vscode</p>
-                            <img src="/icons/vscode.svg" alt="Icon" />
-                        </li>
-                    </ul>
+    function createList() {
+        const list = [];
+        TechNames.forEach((name) => {
+            list.push(
+                <div className={styles.text}>
+                    <p>I use {name}</p>
+                    <Image src={`/icons/${name}.svg`} width="30" height="30" alt="Icon" />
                 </div>
-            </div>
+            );
+        });
+
+        return list;
+    }
+
+    return (
+        <div className={styles.container}>
+            <TextLoop
+                interval="2200"
+                children={createList()}
+                springConfig={{ stiffness: 280, damping: 18 }}
+            />
         </div>
     );
 }
