@@ -1,6 +1,5 @@
 import React from 'react';
 import TextLoop from 'react-text-loop';
-import Image from 'next/image';
 import TechNames from './titlesList';
 import styles from './style.module.scss';
 
@@ -11,12 +10,10 @@ function Title() {
             list.push(
                 <div className={styles.text}>
                     <p>I use {name}</p>
-                    <Image
+                    <img
                         width="30"
                         height="30"
                         alt="Icon"
-                        loading="eager"
-                        priority="true"
                         src={`/icons/${name.toLowerCase()}.svg`}
                     />
                 </div>
