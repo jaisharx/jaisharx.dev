@@ -1,6 +1,5 @@
 import React from 'react';
 import TextLoop from 'react-text-loop';
-import TechNames from './titlesList';
 import styles from './style.module.scss';
 
 import Javascript from './icons/javascript.svg';
