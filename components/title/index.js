@@ -17,7 +17,7 @@ import Powershell from './icons/powershell.svg';
 import Python from './icons/python.svg';
 import CPP from './icons/cpp.svg';
 import MongoDB from './icons/mongodb.svg';
-import Nginx from './icons/Nginx.svg';
+import Nginx from './icons/nginx.svg';
 import Serverless from './icons/serverless.svg';
 import Tailwind from './icons/tailwind.svg';
 import Vim from './icons/vim.svg';
