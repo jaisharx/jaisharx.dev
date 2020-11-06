@@ -12,6 +12,9 @@
     height: calc(100vh - 25rem);
 
     h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-family: 'Poiret One', cursive;
         user-select: none;
         font-size: 16rem;

@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'; 
 import Helment from '../components/helmet';
 import styles from '../styles/index.module.scss';
 
