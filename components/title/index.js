@@ -8,19 +8,7 @@ function Title() {
     function createList() {
         const list = [];
         TechNames.forEach((name) => {
-            list.push(
-                <div className={styles.text}>
-                    <p>I use {name}</p>
-                    <Image
-                        width="30"
-                        height="30"
-                        alt="Icon"
-                        loading="eager"
-                        priority="true"
-                        src={`/icons/${name.toLowerCase()}.svg`}
-                    />
-                </div>
-            );
+            list.push();
         });
 
         return list;
@@ -28,11 +16,24 @@ function Title() {
 
     return (
         <div className={styles.container}>
-            <TextLoop
-                interval="2200"
-                children={createList()}
-                springConfig={{ stiffness: 280, damping: 18 }}
-            />
+            <TextLoop interval="2200">
+                <div className={styles.text}>
+                    <p>I use Javascript</p>
+                    <Image width="30" height="30" alt="Icon" src="/icons/javascript.svg" />
+                </div>
+                <div className={styles.text}>
+                    <p>I use Typescript</p>
+                    <Image width="30" height="30" alt="Icon" src="/icons/typescript.svg" />
+                </div>
+                <div className={styles.text}>
+                    <p>I use GraphQL</p>
+                    <Image width="30" height="30" alt="Icon" src="/icons/graphql.svg" />
+                </div>
+                <div className={styles.text}>
+                    <p>I use Docker</p>
+                    <Image width="30" height="30" alt="Icon" src="/icons/docker.svg" />
+                </div>
+            </TextLoop>
         </div>
     );
 }
