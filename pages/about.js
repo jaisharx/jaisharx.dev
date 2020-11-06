@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Helmet from '../components/helmet';
 import Navbar from '../components/navbar';
 import Signature from '../components/signature';
 import styles from '../styles/about.module.scss';
@@ -7,9 +7,7 @@ import { Fade } from 'react-awesome-reveal';
 function About() {
     return (
         <>
-            <Head>
-                <title>jaisharx.dev | About</title>
-            </Head>
+            <Helmet title="About" description="Learn more about me" />
             <Navbar active="about" isBack="true" />
             <Fade top>
                 <div className={styles.container}>

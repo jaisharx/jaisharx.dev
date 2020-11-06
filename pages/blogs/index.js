@@ -2,16 +2,14 @@ import styles from '../../styles/items.module.scss';
 import Navbar from '../../components/navbar';
 import TimeStamp from '../../components/timestamp';
 import Footer from '../../components/footer';
-import Head from 'next/head';
+import Helmet from '../../components/helmet';
 import Link from 'next/link';
 import { Fade } from 'react-awesome-reveal';
 
 function Blogs({ blogs }) {
     return (
         <>
-            <Head>
-                <title>jaisharx.dev | Blogs</title>
-            </Head>
+            <Helmet title="Blogs" description="Find amazing blogs and content here." />
 
             <header>
                 <Navbar active="blogs" isBack="true" />

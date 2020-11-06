@@ -1,6 +1,6 @@
 export default {
     author: 'Jai Sharma',
-    title: 'jaisharma.dev | my all-in-one platform for publishing content',
+    title: 'Home',
     name: 'jaisharma.dev',
     description:
         "Hi, there! Nice to have you around. You're on my personal website right now. I built this as an one-spot online collection for all my thoughts and projects. Like a diary that I could maintain for myself and others like me interested in the tech, philosophy, or future.",

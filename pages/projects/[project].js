@@ -4,10 +4,12 @@ import Footer from '../../components/footer';
 import Signature from '../../components/signature';
 import PageData from '../../components/page-data';
 import ProgressWrapper from '../../components/progress';
+import Helmet from '../../components/helmet';
 
 function Project({ project }) {
     return (
         <ProgressWrapper>
+            <Helmet title={project[0].title} description={project[0].desc} />
             <header>
                 <Navbar isBack="true" active="projects" />
             </header>

@@ -4,19 +4,23 @@ import Footer from '../../components/footer';
 import Signature from '../../components/signature';
 import PageData from '../../components/page-data';
 import ProgressWrapper from '../../components/progress';
+import Helmet from '../../components/helmet';
 
 function Blog({ blog }) {
     return (
-        <ProgressWrapper>
-            <header>
-                <Navbar isBack="true" active="blogs" />
-            </header>            
-            <PageData data={blog} />
-            <div className={styles.signatureContainer}>
-                <Signature />
-            </div>
-            <Footer />
-        </ProgressWrapper>
+        <>
+            <Helmet title={blog[0].title} description={blog[0].desc} />
+            <ProgressWrapper>
+                <header>
+                    <Navbar isBack="true" active="blogs" />
+                </header>
+                <PageData data={blog} />
+                <div className={styles.signatureContainer}>
+                    <Signature />
+                </div>
+                <Footer />
+            </ProgressWrapper>
+        </>
     );
 }
 

@@ -1,14 +1,12 @@
+import Helmet from '../components/helmet';
 import styles from '../styles/contact.module.scss';
 import Navbar from '../components/navbar';
 import { Fade } from 'react-awesome-reveal';
-import Head from 'next/head';
 
 function Contact() {
     return (
         <>
-            <Head>
-                <title>jaisharx.dev | Contact Me</title>
-            </Head>
+            <Helmet title="Contact me" description="Social media platforms where you can find me" />
             <Navbar active="contact" isBack="true" />
             <Fade top>
                 <div className={styles.container}>

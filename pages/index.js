@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Helment from '../components/helmet';
 import styles from '../styles/index.module.scss';
 
 import Navbar from '../components/navbar';
@@ -10,9 +10,7 @@ import { Fade } from 'react-awesome-reveal';
 function Index({ blogs, projects }) {
     return (
         <>
-            <Head>
-                <title>jaisharx.dev</title>
-            </Head>
+            <Helment />
             <header className={styles.container}>
                 <Navbar />
                 <Fade top>

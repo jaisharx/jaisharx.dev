@@ -2,16 +2,14 @@ import styles from '../../styles/items.module.scss';
 import Navbar from '../../components/navbar';
 import TimeStamp from '../../components/timestamp';
 import Footer from '../../components/footer';
-import Head from 'next/head';
+import Helmet from '../../components/helmet';
 import Link from 'next/link';
 import { Fade } from 'react-awesome-reveal';
 
 function Projects({ projects }) {
     return (
         <>
-            <Head>
-                <title>jaisharx.dev | Projects</title>
-            </Head>
+            <Helmet title="Projects" description="Find amazing Projects and Code here." />
 
             <header>
                 <Navbar active="projects" isBack="true" />
