@@ -9,6 +9,7 @@
     "clean": "shx rm -rf .next .vercel"
   },
   "dependencies": {
+    "@svgr/webpack": "^5.4.0",
     "firebase": "^7.24.0",
     "next": "^10.0.0",
     "react": "^17.0.1",
