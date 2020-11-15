@@ -13,8 +13,8 @@ function Navbar({ active, isBack }) {
                         </div>
                     </Link>
                 ) : (
-                    <div className={styles.imageContainer}>
-                        <img src="/assets/home.svg" alt="Home" />
+                    <div className={styles.profileImage}>
+                        <img src="/assets/profile.jpg" alt="Home" />
                     </div>
                 )}
             </div>
