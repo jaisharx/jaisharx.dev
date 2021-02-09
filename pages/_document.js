@@ -28,15 +28,38 @@ class MyDocument extends Document {
                         href="/favicon/favicon-16x16.png"
                     />
                     <link rel="manifest" href="/favicon/site.webmanifest" />
-                    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+                    <link
+                        rel="mask-icon"
+                        href="/favicon/safari-pinned-tab.svg"
+                        color="#5bbad5"
+                    />
                     <link rel="shortcut icon" href="/favicon/favicon.ico" />
                     <meta name="msapplication-TileColor" content="#da532c" />
-                    <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
+                    <meta
+                        name="msapplication-config"
+                        content="/favicon/browserconfig.xml"
+                    />
                     <meta name="theme-color" content="#ffffff" />
 
                     <meta
                         name="google-site-verification"
                         content="VQpDc_oztiguHWnFWOwrypW9v-7773kbtNQH4VrdT24"
+                    />
+
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                            <!-- Global site tag (gtag.js) - Google Analytics -->
+                            <script async src="https://www.googletagmanager.com/gtag/js?id=G-PERCF2XH9V"></script>
+                            <script>
+                              window.dataLayer = window.dataLayer || [];
+                              function gtag(){dataLayer.push(arguments);}
+                              gtag('js', new Date());
+                            
+                              gtag('config', 'G-PERCF2XH9V');
+                            </script>
+                            `,
+                        }}
                     />
                 </Head>
                 <body>
