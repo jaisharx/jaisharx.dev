@@ -46,11 +46,10 @@ class MyDocument extends Document {
                         content="VQpDc_oztiguHWnFWOwrypW9v-7773kbtNQH4VrdT24"
                     />
 
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PERCF2XH9V"></script>
                     <script
                         dangerouslySetInnerHTML={{
                             __html: `
-                            <!-- Global site tag (gtag.js) - Google Analytics -->
-                            <script async src="https://www.googletagmanager.com/gtag/js?id=G-PERCF2XH9V"></script>
                             <script>
                               window.dataLayer = window.dataLayer || [];
                               function gtag(){dataLayer.push(arguments);}
