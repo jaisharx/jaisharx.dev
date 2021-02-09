@@ -46,15 +46,18 @@ class MyDocument extends Document {
                         content="VQpDc_oztiguHWnFWOwrypW9v-7773kbtNQH4VrdT24"
                     />
 
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PERCF2XH9V"></script>
+                    <script
+                        async
+                        src="https://www.googletagmanager.com/gtag/js?id=G-H12FYETX5B"
+                    ></script>
                     <script
                         dangerouslySetInnerHTML={{
                             __html: `
-                              window.dataLayer = window.dataLayer || [];
-                              function gtag(){dataLayer.push(arguments);}
-                              gtag('js', new Date());
-                            
-                              gtag('config', 'G-PERCF2XH9V');
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                          
+                            gtag('config', 'G-H12FYETX5B');
                             `,
                         }}
                     />
