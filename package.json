@@ -1,5 +1,5 @@
 {
-  "name": "jaisharx.dev",
+  "name": "jaisharma.dev",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,17 +9,15 @@
     "clean": "shx rm -rf .next .vercel"
   },
   "dependencies": {
+    "@chakra-ui/react": "^1.5.2",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
     "@svgr/webpack": "^5.4.0",
-    "firebase": "^7.24.0",
-    "next": "^10.0.0",
-    "react": "^17.0.1",
-    "react-awesome-reveal": "^3.3.1",
-    "react-dom": "^17.0.1",
-    "react-icons": "^3.11.0",
-    "react-showdown": "^2.1.0",
-    "react-spring": "^8.0.27",
-    "react-text-loop": "^2.3.0",
-    "sass": "^1.27.0"
+    "framer-motion": "^4",
+    "next": "^10.1.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^3.11.0"
   },
   "devDependencies": {
     "shx": "^0.3.3"

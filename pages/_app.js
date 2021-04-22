@@ -1,19 +1,11 @@
-import '../styles/globals.scss';
-import Head from 'next/head';
-
-// import firebase from '../firebase';
+import { ChakraProvider } from '@chakra-ui/react';
 
 function MyApp({ Component, pageProps }) {
     return (
         <>
-            <Head>
-                <title>jaisharx.dev</title>
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1.0"
-                />
-            </Head>
-            <Component {...pageProps} />
+            <ChakraProvider>
+                <Component {...pageProps} />
+            </ChakraProvider>
         </>
     );
 }
