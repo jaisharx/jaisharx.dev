@@ -1,5 +1,11 @@
 import NextHead from 'next/head';
 
+import Header from 'components/header';
+import Navbar from 'components/navbar';
+import { Box } from '@chakra-ui/react';
+import Projects from 'components/projects';
+import Footer from 'components/footer';
+
 export default function Homepage() {
     return (
         <>
@@ -7,6 +13,11 @@ export default function Homepage() {
                 <title>Jai Sharma | Portfolio</title>
                 <link rel="icon" href="logo.png"></link>
             </NextHead>
+
+            <Navbar />
+            <Header />
+            <Projects />
+            <Footer/>
         </>
     );
 }
