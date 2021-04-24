@@ -1,9 +1,9 @@
-import { Box, Text, Button, Heading } from '@chakra-ui/react';
+import { Box, Text, Button, Heading, Link } from '@chakra-ui/react';
 import { SmallContainer } from './container';
 
 export default function Header() {
     return (
-        <Box as="header">
+        <Box as="header" mb="60">
             <SmallContainer>
                 <Heading
                     color="#fff"
@@ -12,15 +12,18 @@ export default function Header() {
                     fontWeight="normal"
                     fontSize="32px"
                 >
-                    Hi, I’m{' '}
-                    <Text as="span" color="#2DFFC0">
-                        Jai Sharma
-                    </Text>
-                    . Software developer based in New Delhi, India. I build
-                    stuff with modern technologies like Nextjs.
+                    Hi there, I’m{' '}
+                    <Text as="span" color="#2DFFC0" fontWeight="500">
+                        Jai Sharma.
+                    </Text>{' '}
+                    Software developer from New Delhi, India. I specialize in
+                    building clean & modern looking interfaces.
                 </Heading>
                 <Button
+                    as={Link}
+                    href="#projects"
                     mt="9"
+                    size="lg"
                     variant="outline"
                     color="#fff"
                     borderRadius="4"
