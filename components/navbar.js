@@ -6,14 +6,17 @@ export default function Navbar() {
         <Box color="white" py="4" pt="6">
             <SmallContainer>
                 <HStack>
-                    <Text fontWeight="bold" mr="auto" fontSize="32px">
+                    <Text
+                        as={Link}
+                        fontWeight="bold"
+                        mr="auto"
+                        fontSize="32px"
+                        href="/"
+                    >
                         JS
                     </Text>
-                    <Link fontSize="18px" href="/about">
-                        <Text>About</Text>
-                    </Link>
-                    <Link fontSize="18px" pl="6" href="#contact">
-                        <Text>Contact</Text>
+                    <Link fontSize="16px" href="#contact">
+                        <Text>Contact me</Text>
                     </Link>
                 </HStack>
             </SmallContainer>

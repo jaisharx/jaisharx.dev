@@ -2,11 +2,6 @@ import { Box, Link, Flex, Heading } from '@chakra-ui/react';
 import { Container } from './container';
 import GitHubCalendar from 'react-github-calendar';
 
-const exampleTheme = {
-    background: 'transparent',
-    text: '#fff',
-};
-
 export default function Footer() {
     return (
         <Box as="footer" id="contact" my="80">
@@ -35,9 +30,6 @@ export default function Footer() {
                         sendtojsharma@gmail.com
                     </Link>
                 </Heading>
-                {/* <Flex justify="center" mt="40">
-                    <GitHubCalendar username="jaisharx" theme={exampleTheme} blockSize={20}/>
-                </Flex> */}
             </Container>
         </Box>
     );

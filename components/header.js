@@ -21,15 +21,20 @@ export default function Header() {
                 </Heading>
                 <Button
                     as={Link}
-                    href="#projects"
+                    isExternal
                     mt="9"
                     size="lg"
                     variant="outline"
                     color="#fff"
                     borderRadius="4"
-                    _hover={{ color: 'black', background: 'white' }}
+                    href="https://www.upwork.com/freelancers/~016a63e98fbee15249"
+                    _hover={{
+                        color: 'black',
+                        background: 'white',
+                        textDecoration: 'none',
+                    }}
                 >
-                    View my projects
+                    Hire me @UpWork
                 </Button>
             </SmallContainer>
         </Box>

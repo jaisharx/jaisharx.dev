@@ -2,7 +2,6 @@ import NextHead from 'next/head';
 
 import Header from 'components/header';
 import Navbar from 'components/navbar';
-import { Box } from '@chakra-ui/react';
 import Projects from 'components/projects';
 import Footer from 'components/footer';
 
