@@ -1,6 +1,7 @@
 import { Box, Text, Button, Heading, Link, Image } from '@chakra-ui/react';
 import { SmallContainer } from './container';
 import styled from '@emotion/styled';
+import BgEffect from './bgEffect';
 
 const HoverText = styled(Text)`
     cursor: pointer;
@@ -66,6 +67,7 @@ export default function Header() {
                     Hire me @UpWork
                 </Button>
             </SmallContainer>
+            {/* <BgEffect/> */}
         </Box>
     );
 }
