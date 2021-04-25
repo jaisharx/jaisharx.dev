@@ -15,8 +15,11 @@ export default function Navbar() {
                     >
                         JS
                     </Text>
+                    <Link fontSize="16px" href="#contact" pr="4">
+                        <Text>Blog</Text>
+                    </Link>
                     <Link fontSize="16px" href="#contact">
-                        <Text>Contact me</Text>
+                        <Text>Contact</Text>
                     </Link>
                 </HStack>
             </SmallContainer>

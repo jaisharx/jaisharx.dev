@@ -1,6 +1,5 @@
 import { Box, Link, Flex, Heading } from '@chakra-ui/react';
 import { Container } from './container';
-import GitHubCalendar from 'react-github-calendar';
 
 export default function Footer() {
     return (

@@ -1,5 +1,33 @@
-import { Box, Text, Button, Heading, Link } from '@chakra-ui/react';
+import { Box, Text, Button, Heading, Link, Image } from '@chakra-ui/react';
 import { SmallContainer } from './container';
+import styled from '@emotion/styled';
+
+const HoverText = styled(Text)`
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:hover img {
+        display: inline-block;
+    }
+`;
+
+function HoverImage() {
+    return (
+        <Image
+            src="/profile.jpg"
+            position="absolute"
+            w="24%"
+            display="inline-block"
+            top="80px"
+            left="600px"
+            zIndex="1000"
+            borderRadius="4"
+            display="none"
+        />
+    );
+}
 
 export default function Header() {
     return (
@@ -13,9 +41,10 @@ export default function Header() {
                     fontSize="32px"
                 >
                     Hi there, I’m{' '}
-                    <Text as="span" color="#2DFFC0" fontWeight="500">
+                    <HoverText as="span" color="#2DFFC0" fontWeight="500">
                         Jai Sharma.
-                    </Text>{' '}
+                        <HoverImage />
+                    </HoverText>{' '}
                     Software developer from New Delhi, India. I specialize in
                     building clean & modern looking interfaces.
                 </Heading>
