@@ -67,7 +67,7 @@ export default function Header() {
                     Hire me @UpWork
                 </Button>
             </SmallContainer>
-            {/* <BgEffect/> */}
+            <BgEffect/>
         </Box>
     );
 }
