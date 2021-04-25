@@ -1,4 +1,4 @@
-import { Box, Grid, Flex, Text, HStack, Badge } from '@chakra-ui/react';
+import { Box, Grid, Flex, Text, HStack, Badge, Link } from '@chakra-ui/react';
 import { Container } from './container';
 import NextImage from 'next/image';
 import styled from '@emotion/styled';
@@ -10,9 +10,16 @@ const ImageContainer = styled(Box)`
     }
 `;
 
-function Card({ imgSrc, title }) {
+function Card({ imgSrc, title, href, githubLink }) {
     return (
-        <Box borderRadius="4px" overflow="hidden" cursor="pointer">
+        <Box
+            as={Link}
+            href={href}
+            isExternal
+            borderRadius="4px"
+            overflow="hidden"
+            cursor="pointer"
+        >
             <ImageContainer w="655px" h="614" position="relative">
                 <NextImage src={`${imgSrc}.png`} width="655" height="614" />
                 <Flex
@@ -29,6 +36,9 @@ function Card({ imgSrc, title }) {
                     transition="opacity .2s ease"
                 >
                     <Box
+                        as={Link}
+                        isExternal
+                        href={githubLink}
                         bg="white"
                         p="2"
                         m="4"
@@ -61,9 +71,16 @@ function Card({ imgSrc, title }) {
     );
 }
 
-function SmallCard({ imgSrc, title }) {
+function SmallCard({ imgSrc, title, href, githubLink }) {
     return (
-        <Box borderRadius="4px" overflow="hidden" cursor="pointer">
+        <Box
+            as={Link}
+            href={href}
+            isExternal
+            borderRadius="4px"
+            overflow="hidden"
+            cursor="pointer"
+        >
             <ImageContainer w="437px" h="307px" position="relative">
                 <NextImage src={`${imgSrc}.png`} width="437" height="307" />
                 <Flex
@@ -80,6 +97,9 @@ function SmallCard({ imgSrc, title }) {
                     transition="opacity .2s ease"
                 >
                     <Box
+                        as={Link}
+                        isExternal
+                        href={githubLink}
                         bg="white"
                         p="2"
                         mt="4"
@@ -118,13 +138,38 @@ export default function Projects() {
                 <Grid templateColumns="repeat(2, 1fr)" gap="5">
                     {/* <Card imgSrc="/medium" /> */}
                     {/* <Card imgSrc="/dev.to" /> */}
-                    <Card imgSrc="/nextjs" title="Nextjs.org" />
-                    <Card imgSrc="/designwiz" title="Designwiz.com" />
+                    <Card
+                        imgSrc="/nextjs"
+                        title="Nextjs.org"
+                        href="https://nextjs-org-website.vercel.app/"
+                        githubLink="https://github.com/jaisharx/nextjs.org"
+                    />
+                    <Card
+                        imgSrc="/designwiz"
+                        title="Designwiz.com"
+                        href="https://designwiz.vercel.app/"
+                        githubLink="https://github.com/jaisharx/designwiz"
+                    />
                 </Grid>
                 <Grid templateColumns="repeat(3, 1fr)" gap="5" mt="5">
-                    <SmallCard imgSrc="/project5" title="Quizoo" />
-                    <SmallCard imgSrc="/project6" title="Todo App" />
-                    <SmallCard imgSrc="/project7" title="Jsonplaceholder" />
+                    <SmallCard
+                        imgSrc="/project5"
+                        title="Quizoo"
+                        href="https://quizoo.vercel.app/"
+                        githubLink="https://github.com/jaisharx/quizoo"
+                    />
+                    <SmallCard
+                        imgSrc="/project6"
+                        title="Todo App"
+                        href="https://jaisharx.github.io/react-todo-app/"
+                        githubLink="https://github.com/jaisharx/react-todo-app"
+                    />
+                    <SmallCard
+                        imgSrc="/project7"
+                        title="Jsonplaceholder"
+                        href="https://jsonplaceholder-api-viewer.vercel.app/"
+                        githubLink="https://github.com/jaisharx/jsonplaceholder-api-viewer"
+                    />
                     {/* <NextImage src="/project5.png" width="437" height="307"/>
                     <NextImage src="/project5.png" width="437" height="307"/>
                     <NextImage src="/project5.png" width="437" height="307"/> */}
