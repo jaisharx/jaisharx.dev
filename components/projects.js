@@ -7,6 +7,10 @@ import { AiFillGithub } from 'react-icons/ai';
 const ImageContainer = styled(Box)`
     &:hover .overlay {
         opacity: 1;
+    
+        @media(max-width: 48em){
+            opacity: 0;
+        }
     }
 `;
 
@@ -134,7 +138,7 @@ export default function Projects() {
     return (
         <Box id="#projects">
             <Container>
-                <Grid templateColumns="repeat(2, 1fr)" gap="5">
+                <Grid templateColumns="repeat(auto-fit, minmax(300px, 1fr))" gap="5">
                     {/* <Card imgSrc="/medium" /> */}
                     {/* <Card imgSrc="/dev.to" /> */}
                     <Card
@@ -150,7 +154,7 @@ export default function Projects() {
                         githubLink="https://github.com/jaisharx/designwiz"
                     />
                 </Grid>
-                <Grid templateColumns="repeat(3, 1fr)" gap="5" mt="5">
+                <Grid templateColumns="repeat(auto-fit, minmax(300px, 1fr))" gap="5" mt="5">
                     <SmallCard
                         imgSrc="/project5"
                         title="Quizoo"

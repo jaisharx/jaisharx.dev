@@ -3,10 +3,10 @@ import { Container } from './container';
 
 export default function Footer() {
     return (
-        <Box as="footer" id="contact" my="80">
+        <Box as="footer" id="contact" my={{ base: 20, md: 80 }}>
             <Container>
                 <Heading
-                    fontSize="92px"
+                    fontSize={{ base: '32px', md: '62px', lg: '92px'}}
                     color="white"
                     textShadow=" 1px 1px 0px #161919,
                     2px 2px 0px #161919,
