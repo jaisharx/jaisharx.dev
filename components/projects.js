@@ -154,7 +154,7 @@ export default function Projects() {
                         githubLink="https://github.com/jaisharx/designwiz"
                     />
                 </Grid>
-                <Grid templateColumns="repeat(auto-fit, minmax(300px, 1fr))" gap="5" mt="5">
+                <Grid templateColumns="repeat(auto-fit, minmax(200px, 1fr))" gap="5" mt="5">
                     <SmallCard
                         imgSrc="/project5"
                         title="Quizoo"
