@@ -17,15 +17,16 @@ const HoverText = styled(Text)`
 function HoverImage() {
     return (
         <Image
+            p="2"
+            w="24%"
             src="/profile.jpg"
             position="absolute"
-            w="24%"
             display="inline-block"
             top="80px"
             left="600px"
             zIndex="1000"
-            borderRadius="4"
             display="none"
+            border="8px solid #2DFFC0"
         />
     );
 }
@@ -39,7 +40,7 @@ export default function Header() {
                     mt="28"
                     lineHeight="1.4"
                     fontWeight="normal"
-                    fontSize={{ base: '24px', md: '32px'}}
+                    fontSize={{ base: '24px', md: '32px' }}
                 >
                     Hi there, I’m{' '}
                     <HoverText as="span" color="#2DFFC0" fontWeight="500">
@@ -67,7 +68,7 @@ export default function Header() {
                     Hire me @UpWork
                 </Button>
             </SmallContainer>
-            <BgEffect/>
+            <BgEffect />
         </Box>
     );
 }
