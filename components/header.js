@@ -40,7 +40,7 @@ export default function Header() {
                     mt="28"
                     lineHeight="1.4"
                     fontWeight="normal"
-                    fontSize={{ base: '24px', md: '32px' }}
+                    fontSize={{ base: '20px', md: '32px' }}
                 >
                     Hi there, I’m{' '}
                     <HoverText as="span" color="#2DFFC0" fontWeight="500">
