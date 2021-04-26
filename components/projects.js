@@ -20,7 +20,7 @@ function Card({ imgSrc, title, href, githubLink }) {
             overflow="hidden"
             cursor="pointer"
         >
-            <ImageContainer w="655px" h="614" position="relative">
+            <ImageContainer position="relative">
                 <NextImage src={`${imgSrc}.png`} width="655" height="614" />
                 <Flex
                     className="overlay"
@@ -62,7 +62,7 @@ function Card({ imgSrc, title, href, githubLink }) {
                             elit. Numquam soluta voluptatibus amet architecto
                             nihil maiores reiciendis facilis, ipsum in eum?
                             Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Quisquam velit minus ex ea deleniti impedit
+                            elit. Quisquam velit minus ex ea.
                         </Text>
                     </Box>
                 </Flex>
@@ -81,7 +81,7 @@ function SmallCard({ imgSrc, title, href, githubLink }) {
             overflow="hidden"
             cursor="pointer"
         >
-            <ImageContainer w="437px" h="307px" position="relative">
+            <ImageContainer position="relative">
                 <NextImage src={`${imgSrc}.png`} width="437" height="307" />
                 <Flex
                     className="overlay"
@@ -121,8 +121,7 @@ function SmallCard({ imgSrc, title, href, githubLink }) {
                         </Flex>
                         <Text mt="2">
                             Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Numquam soluta voluptatibus amet architecto
-                            nihi.
+                            elit. Numquam soluta voluptatibus amet architecto.
                         </Text>
                     </Box>
                 </Flex>
