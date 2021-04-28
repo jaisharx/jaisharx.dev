@@ -20,7 +20,7 @@ function Project({ count, title, imgSrc, children }) {
                 {children}
             </Text>
             <Box mt={24}>
-                <NextImage src={`/${imgSrc}.png`} width="1280" height="800" />
+                <NextImage src={`/${imgSrc}.png`} width="1280" height="800" alt={title} />
             </Box>
         </Box>
     );

@@ -77,7 +77,7 @@ export default function Header() {
             <Container>
                 <Grid templateColumns="1.4fr 1fr">
                     <LeftColumn />
-                    <NextImage src="/profile.jpg" width="1246" height="1664" />
+                    <NextImage src="/profile.jpg" width="1246" height="1664" alt="My Image" />
                 </Grid>
             </Container>
         </Box>
