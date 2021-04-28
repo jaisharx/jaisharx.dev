@@ -6,3 +6,7 @@ body {
     overflow-x: hidden;
     background-color: #222 !important;
 }
+
+::selection {
+    background: #2dffc0c5;
+}
