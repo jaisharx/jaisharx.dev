@@ -11,7 +11,7 @@ const BigTitle = styled(Text)`
 
 function Project({ count, title, imgSrc, children }) {
     return (
-        <Box color="white" mt={28}>
+        <Box color="white" mt={28} as="article">
             <BigTitle>Project {count}</BigTitle>
             <Heading textTransform="uppercase" mt={2}>
                 {title.toUpperCase()}
@@ -28,7 +28,7 @@ function Project({ count, title, imgSrc, children }) {
 
 export default function Projects() {
     return (
-        <Box as="article">
+        <Box as="main">
             <Container>
                 <Project count="01" title="Dev.to Clone" imgSrc="dev.to">
                     Built with react & nextjs, thus it’s performant by it’s very
