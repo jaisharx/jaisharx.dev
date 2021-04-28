@@ -4,12 +4,6 @@ import Iframe from 'react-iframe';
 import { useEffect } from 'react';
 
 function Card({ title, href, githubLink }) {
-    useEffect(() => {
-        const iframeWin = document.querySelector('.custom-iframe')
-            .contentWindow;
-        iframeWin.postMessage('isZoomed', 'https://jaisharma.dev/');
-    });
-
     return (
         <Box
             as={Link}
