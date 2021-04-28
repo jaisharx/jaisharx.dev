@@ -10,6 +10,7 @@ export default function Homepage() {
                 <link rel="icon" href="logo.png"></link>
             </NextHead>
 
+            
             {/* <Footer/> */}
         </>
     );
