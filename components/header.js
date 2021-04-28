@@ -48,7 +48,7 @@ function LeftColumn() {
                 Hi, there ✋
             </Text>
             <Text fontSize="5xl" mt={4}>
-                I’m Jai Sharma
+                I’m Jai Sharma.
             </Text>
             <Text fontSize="large" mt={6}>
                 I’m a Software Developer from New Delhi, India. I specialize in
