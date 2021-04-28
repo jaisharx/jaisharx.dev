@@ -31,7 +31,7 @@ const FancyUnderline = styled.span`
     &::after {
         content: '';
         height: 8px;
-        width: 108%;
+        width: 106%;
         opacity: 0.6;
         background-color: #2dffc0;
         position: absolute;
