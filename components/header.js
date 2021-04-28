@@ -58,19 +58,19 @@ function LeftColumn() {
                 web technologies.
             </Text>
             <HStack spacing={9} mt={10}>
-                <SocialLink>
+                <SocialLink href="mailto:sendtojsharma@gmail.com" isExternal>
                     <GmailIcon />
                 </SocialLink>
-                <SocialLink>
+                <SocialLink href="https://github.com/jaisharx" isExternal>
                     <GithubIcon />
                 </SocialLink>
-                <SocialLink>
+                <SocialLink href="https://dev.to/jaisharx" isExternal>
                     <DevToIcon />
                 </SocialLink>
-                <SocialLink>
+                <SocialLink href="https://medium.com/@jaisharx" isExternal>
                     <MediumIcon />
                 </SocialLink>
-                <SocialLink>
+                <SocialLink href="https://dribbble.com/jaisharx" isExternal>
                     <DribbleIcon />
                 </SocialLink>
             </HStack>
