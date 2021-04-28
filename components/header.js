@@ -57,7 +57,7 @@ function LeftColumn() {
 
 export default function Header() {
     return (
-        <Box as="header">
+        <Box as="header" mt={20}>
             <Container>
                 <Grid templateColumns="1.4fr 1fr">
                     <LeftColumn />
