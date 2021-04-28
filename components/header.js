@@ -24,6 +24,10 @@ const SocialLink = styled(Link)`
             fill: black;
         }
     }
+
+    &:focus {
+        box-shadow: 0 0 0 3px #2dffc0;  
+    }
 `;
 
 const FancyUnderline = styled.span`
