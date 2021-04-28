@@ -25,11 +25,11 @@ const FancyUnderline = styled.span`
         content: '';
         height: 8px;
         width: 108%;
-        opacity: .6;
-        background-color: #2DFFC0;
+        opacity: 0.6;
+        background-color: #2dffc0;
         position: absolute;
         bottom: 0;
-        left: -4px;
+        left: -2px;
     }
 `;
 
@@ -45,10 +45,10 @@ function LeftColumn() {
             </Text>
             <Text fontSize="large" mt={6}>
                 I’m a Software Developer from New Delhi, India. I specialize in
-                creating high quality <br />{' '}
+                creating <br /> high quality{' '}
                 <FancyUnderline>websites</FancyUnderline> &{' '}
-                <FancyUnderline>webapps</FancyUnderline> made with love of
-                modern web technologies.
+                <FancyUnderline>webapps</FancyUnderline> made with ❤ of modern
+                web technologies.
             </Text>
             <HStack spacing={9} mt={10}>
                 <SocialLink>
