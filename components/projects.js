@@ -1,4 +1,4 @@
-import { Box, Text, Heading } from '@chakra-ui/react';
+import { Box, Text, Heading, HStack, Link } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import Container from './container';
 import NextImage from 'next/image';
@@ -9,7 +9,7 @@ const BigTitle = styled(Text)`
     font-family: 'Monoton';
 `;
 
-function Project({ count, title, imgSrc, children }) {
+function Project({ count, title, imgSrc, url, GithubUrl, children }) {
     return (
         <Box color="white" mt={28} as="article">
             <BigTitle>Project {count}</BigTitle>
@@ -19,8 +19,26 @@ function Project({ count, title, imgSrc, children }) {
             <Text fontSize="2rem" mt={6}>
                 {children}
             </Text>
-            <Box mt={24}>
-                <NextImage src={`/${imgSrc}.png`} width="1280" height="800" alt={title} />
+            <HStack mt={12}>
+                <Link href={url} fontSize="2xl" fontWeight="medium" color="#2dffc0">
+                    Live Url
+                </Link>
+                <Text fontSize="2xl" fontWeight="medium" color="#2dffc0">
+                    •
+                </Text>
+                <Link href={GithubUrl} fontSize="2xl" fontWeight="medium" color="#2dffc0">
+                    Source Code
+                </Link>
+            </HStack>
+            <Box mt={12}>
+                <Link href={url} isExternal>
+                    <NextImage
+                        src={`/${imgSrc}.png`}
+                        width="1280"
+                        height="800"
+                        alt={title}
+                    />
+                </Link>
             </Box>
         </Box>
     );
