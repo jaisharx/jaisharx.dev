@@ -7,7 +7,7 @@ function Card({ title, href, githubLink }) {
     useEffect(() => {
         const iframeWin = document.querySelector('.custom-iframe')
             .contentWindow;
-        iframeWin.postMessage('isZoomed', 'http://jaisharma.dev/');
+        iframeWin.postMessage('isZoomed', 'https://jaisharma.dev/');
     });
 
     return (
