@@ -17,6 +17,13 @@ const SocialLink = styled(Link)`
     height: 64px;
     border: 1px solid white;
     border-radius: 100%;
+
+    &:hover {
+        background-color: white;
+        svg {
+            fill: black;
+        }
+    }
 `;
 
 const FancyUnderline = styled.span`
@@ -77,7 +84,12 @@ export default function Header() {
             <Container>
                 <Grid templateColumns="1.4fr 1fr">
                     <LeftColumn />
-                    <NextImage src="/profile.jpg" width="1246" height="1664" alt="My Image" />
+                    <NextImage
+                        src="/profile.jpg"
+                        width="1246"
+                        height="1664"
+                        alt="My Image"
+                    />
                 </Grid>
             </Container>
         </Box>
