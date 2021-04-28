@@ -1,6 +1,7 @@
 import NextHead from 'next/head';
 
 import Footer from 'components/footer';
+import Header from 'components/header';
 
 export default function Homepage() {
     return (
@@ -10,7 +11,7 @@ export default function Homepage() {
                 <link rel="icon" href="logo.png"></link>
             </NextHead>
 
-            
+            <Header />
             {/* <Footer/> */}
         </>
     );
