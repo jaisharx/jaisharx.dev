@@ -19,6 +19,20 @@ const SocialLink = styled(Link)`
     border-radius: 100%;
 `;
 
+const FancyUnderline = styled.span`
+    position: relative;
+    &::after {
+        content: '';
+        height: 8px;
+        width: 108%;
+        opacity: .6;
+        background-color: #2DFFC0;
+        position: absolute;
+        bottom: 0;
+        left: -4px;
+    }
+`;
+
 function LeftColumn() {
     return (
         <Box color="white">
@@ -31,8 +45,10 @@ function LeftColumn() {
             </Text>
             <Text fontSize="large" mt={6}>
                 I’m a Software Developer from New Delhi, India. I specialize in
-                creating high quality <br /> <u>websites</u> & <u>webapps</u>{' '}
-                made with love of modern web technologies.
+                creating high quality <br />{' '}
+                <FancyUnderline>websites</FancyUnderline> &{' '}
+                <FancyUnderline>webapps</FancyUnderline> made with love of
+                modern web technologies.
             </Text>
             <HStack spacing={9} mt={10}>
                 <SocialLink>
