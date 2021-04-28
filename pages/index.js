@@ -9,7 +9,7 @@ export default function Homepage() {
         <>
             <NextHead>
                 <title>Jai Sharma | Portfolio</title>
-                <link rel="icon" href="logo.png"></link>
+                <link rel="icon" href="/favicon.svg"></link>
             </NextHead>
 
             <Header />
