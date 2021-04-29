@@ -18,7 +18,8 @@ const SocialLink = styled(Link)`
     border: 1px solid white;
     border-radius: 100%;
 
-    &:hover {
+    &:hover,
+    &:active {
         background-color: white;
         svg {
             fill: black;
