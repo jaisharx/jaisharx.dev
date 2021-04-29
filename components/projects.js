@@ -49,8 +49,12 @@ function Project({ count, title, imgSrc, url, githubUrl, children }) {
                     Source Code
                 </CustomLink>
             </HStack>
-            <Box borderRadius="md" overflow="hidden" mt={{ base: 4, lg: 12}}>
-                <Link href={url} isExternal>
+            <Box borderRadius="md" overflow="hidden" mt={{ base: 4, lg: 12 }}>
+                <Link
+                    href={url}
+                    isExternal
+                    _focus={{ boxShadow: '0 0 0 3px #2dffc0' }}
+                >
                     <NextImage
                         alt={title}
                         src={`/${imgSrc}.png`}
