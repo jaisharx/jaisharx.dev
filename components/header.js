@@ -13,8 +13,8 @@ const SocialLink = styled(Link)`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 54px;
-    height: 54px;
+    width: 56px;
+    height: 56px;
     border: 1px solid white;
     border-radius: 100%;
 
@@ -54,7 +54,7 @@ function LeftColumn() {
     return (
         <Box color="white">
             <Text fontSize="4xl">JS</Text>
-            <Text fontSize="4xl" fontWeight="light" mt={28}>
+            <Text fontSize="4xl" fontWeight="light" mt={{ base: 24, lg: 28}}>
                 Hi, there ✋
             </Text>
             <Text fontSize="5xl" mt={4}>
