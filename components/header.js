@@ -13,10 +13,15 @@ const SocialLink = styled(Link)`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 64px;
-    height: 64px;
+    width: 54px;
+    height: 54px;
     border: 1px solid white;
     border-radius: 100%;
+
+    @media (min-width: 48em) {
+        width: 64px;
+        height: 64px;
+    }
 
     &:hover,
     &:active {
@@ -55,14 +60,13 @@ function LeftColumn() {
             <Text fontSize="5xl" mt={4}>
                 I’m Jai Sharma.
             </Text>
-            <Text fontSize="large" mt={6}>
-                I’m a Software Developer based in New Delhi, India. I specialize
-                in creating <br /> high quality{' '}
-                <FancyUnderline>websites</FancyUnderline> &{' '}
-                <FancyUnderline>webapps</FancyUnderline> made with ❤ of modern
-                web technologies.
+            <Text fontSize={{ base: 'medium', md: 'large' }} maxW="85%" mt={6}>
+                I’m a Software Developer based in New Delhi, India. I specialize in creating{' '}
+                high quality <FancyUnderline>websites</FancyUnderline> &{' '}
+                <FancyUnderline>webapps</FancyUnderline> made with ❤ of modern web
+                technologies.
             </Text>
-            <HStack spacing={9} mt={10}>
+            <HStack spacing={9} mt={10} pr={-4}>
                 <SocialLink
                     isExternal
                     aria-label="Gmail"
@@ -77,11 +81,7 @@ function LeftColumn() {
                 >
                     <GithubIcon />
                 </SocialLink>
-                <SocialLink
-                    isExternal
-                    aria-label="Dev.to"
-                    href="https://dev.to/jaisharx"
-                >
+                <SocialLink isExternal aria-label="Dev.to" href="https://dev.to/jaisharx">
                     <DevToIcon />
                 </SocialLink>
                 <SocialLink
@@ -107,14 +107,16 @@ export default function Header() {
     return (
         <Box as="header" mt={20}>
             <Container>
-                <Grid templateColumns="1.4fr 1fr">
+                <Grid templateColumns={{ md: '1fr', lg: '1.4fr 1fr' }}>
                     <LeftColumn />
-                    <NextImage
-                        src="/profile.jpg"
-                        width="1246"
-                        height="1664"
-                        alt="My Image"
-                    />
+                    <Box display={{ base: 'none', lg: 'block' }}>
+                        <NextImage
+                            src="/profile.jpg"
+                            width="1246"
+                            height="1664"
+                            alt="My Image"
+                        />
+                    </Box>
                 </Grid>
             </Container>
         </Box>
