@@ -51,7 +51,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
     ```sh
-    git clone git@github.com:jaisharx/dev.to.git
+    git clone git@github.com:jaisharx/jaisharma.dev.git
     ```
 2. Install NPM packages
     ```sh
