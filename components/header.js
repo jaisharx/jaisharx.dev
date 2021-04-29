@@ -26,7 +26,7 @@ const SocialLink = styled(Link)`
     }
 
     &:focus {
-        box-shadow: 0 0 0 3px #2dffc0;  
+        box-shadow: 0 0 0 3px #2dffc0;
     }
 `;
 
@@ -55,8 +55,8 @@ function LeftColumn() {
                 I’m Jai Sharma.
             </Text>
             <Text fontSize="large" mt={6}>
-                I’m a Software Developer from New Delhi, India. I specialize in
-                creating <br /> high quality{' '}
+                I’m a Software Developer based in New Delhi, India. I specialize
+                in creating <br /> high quality{' '}
                 <FancyUnderline>websites</FancyUnderline> &{' '}
                 <FancyUnderline>webapps</FancyUnderline> made with ❤ of modern
                 web technologies.
