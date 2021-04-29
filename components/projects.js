@@ -23,7 +23,7 @@ const BulletDot = styled(Text)`
 function Project({ count, title, imgSrc, url, githubUrl, children }) {
     return (
         <Box color="white" mt={28} as="article">
-            <Text fontSize={{ base: '6xl', lg: '8xl' }} fontFamily="Monoton">
+            <Text fontSize={{ base: '5xl', lg: '8xl' }} fontFamily="Monoton">
                 Project {count}
             </Text>
             <Heading
