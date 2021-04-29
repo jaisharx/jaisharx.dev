@@ -73,7 +73,7 @@ export default function Projects() {
                 >
                     Dev.to clone built by me from scratch (yeah, no YT tuts).{' '}
                     <br />
-                    It's using react & nextjs for it's framework, and chakra UI
+                    It's using react & nextjs as its framework, and chakra UI
                     for themeability.
                 </Project>
                 <Project
