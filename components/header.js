@@ -18,9 +18,17 @@ const SocialLink = styled(Link)`
     border: 1px solid white;
     border-radius: 100%;
 
+    svg {
+        transform: scale(0.72);
+    }
+
     @media (min-width: 48em) {
         width: 64px;
         height: 64px;
+
+        svg {
+            transform: scale(1);
+        }
     }
 
     &:hover,
@@ -54,19 +62,28 @@ function LeftColumn() {
     return (
         <Box color="white">
             <Text fontSize="4xl">JS</Text>
-            <Text fontSize={{base: '2xl', lg: '4xl'}} fontWeight="light" mt={{ base: 24, lg: 28}}>
+            <Text
+                fontSize={{ base: '2xl', lg: '4xl' }}
+                fontWeight="light"
+                mt={{ base: 24, lg: 28 }}
+            >
                 Hi, there ✋
             </Text>
-            <Text fontSize={{ base: '4xl', lg: '5xl'}} mt={4}>
+            <Text fontSize={{ base: '4xl', lg: '5xl' }} mt={4}>
                 I’m Jai Sharma.
             </Text>
-            <Text fontSize={{ base: 'medium', md: 'large' }} maxW="85%" mt={6}>
-                I’m a Software Developer based in New Delhi, India. I specialize in creating{' '}
-                high quality <FancyUnderline>websites</FancyUnderline> &{' '}
-                <FancyUnderline>webapps</FancyUnderline> made with ❤ of modern web
-                technologies.
+            <Text
+                mt={6}
+                fontSize={{ base: 'medium', md: 'large' }}
+                maxW={{ base: '98%', lg: '85%' }}
+            >
+                I’m a Software Developer based in New Delhi, India. I specialize
+                in creating high quality{' '}
+                <FancyUnderline>websites</FancyUnderline> &{' '}
+                <FancyUnderline>webapps</FancyUnderline> made with ❤ of modern
+                web technologies.
             </Text>
-            <HStack spacing={{base: 2, lg: 9}} mt={10} pr={-4}>
+            <HStack spacing={{ base: 3, lg: 9 }} mt={10}>
                 <SocialLink
                     isExternal
                     aria-label="Gmail"
@@ -81,7 +98,11 @@ function LeftColumn() {
                 >
                     <GithubIcon />
                 </SocialLink>
-                <SocialLink isExternal aria-label="Dev.to" href="https://dev.to/jaisharx">
+                <SocialLink
+                    isExternal
+                    aria-label="Dev.to"
+                    href="https://dev.to/jaisharx"
+                >
                     <DevToIcon />
                 </SocialLink>
                 <SocialLink
