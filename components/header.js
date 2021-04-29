@@ -13,8 +13,8 @@ const SocialLink = styled(Link)`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 56px;
-    height: 56px;
+    width: 54px;
+    height: 54px;
     border: 1px solid white;
     border-radius: 100%;
 
@@ -54,10 +54,10 @@ function LeftColumn() {
     return (
         <Box color="white">
             <Text fontSize="4xl">JS</Text>
-            <Text fontSize="4xl" fontWeight="light" mt={{ base: 24, lg: 28}}>
+            <Text fontSize={{base: '2xl', lg: '4xl'}} fontWeight="light" mt={{ base: 24, lg: 28}}>
                 Hi, there ✋
             </Text>
-            <Text fontSize="5xl" mt={4}>
+            <Text fontSize={{ base: '4xl', lg: '5xl'}} mt={4}>
                 I’m Jai Sharma.
             </Text>
             <Text fontSize={{ base: 'medium', md: 'large' }} maxW="85%" mt={6}>
@@ -66,7 +66,7 @@ function LeftColumn() {
                 <FancyUnderline>webapps</FancyUnderline> made with ❤ of modern web
                 technologies.
             </Text>
-            <HStack spacing={9} mt={10} pr={-4}>
+            <HStack spacing={{base: 2, lg: 9}} mt={10} pr={-4}>
                 <SocialLink
                     isExternal
                     aria-label="Gmail"
