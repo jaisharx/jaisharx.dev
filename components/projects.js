@@ -49,16 +49,15 @@ function Project({ count, title, imgSrc, url, githubUrl, children }) {
                     Source Code
                 </CustomLink>
             </HStack>
-            <Box borderRadius="md" overflow="hidden" mt={12}>
+            <Box borderRadius="md" overflow="hidden" mt={{ base: 4, lg: 12}}>
                 <Link href={url} isExternal>
-                    <Box position="relative" w="1280px" h="800px">
-                        <NextImage
-                            alt={title}
-                            src={`/${imgSrc}.png`}
-                            layout="fill"
-                            objectFit="cover"
-                        />
-                    </Box>
+                    <NextImage
+                        alt={title}
+                        src={`/${imgSrc}.png`}
+                        width="1280"
+                        height="800"
+                        objectFit="cover"
+                    />
                 </Link>
             </Box>
         </Box>
