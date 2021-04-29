@@ -15,7 +15,7 @@ const CustomLink = styled(Link)`
     color: #2dffc0;
 
     &:focus {
-        box-shadow: 0 0 0 3px currentColor; 
+        box-shadow: 0 0 0 3px currentColor;
     }
 `;
 
@@ -44,7 +44,7 @@ function Project({ count, title, imgSrc, url, githubUrl, children }) {
                     Source Code
                 </CustomLink>
             </HStack>
-            <Box mt={12}>
+            <Box borderRadius="md" overflow="hidden" mt={12}>
                 <Link href={url} isExternal>
                     <NextImage
                         src={`/${imgSrc}.png`}
