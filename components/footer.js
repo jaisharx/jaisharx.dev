@@ -24,6 +24,7 @@ export default function Footer() {
                     Like what you see? <br /> Reach out to me at <br />
                     <Link
                         _hover={{ borderBottom: '12px solid #2DFFC0' }}
+                        _focus={{ boxShadow: 'none' }}
                         href="mailto:sendtojsharma@gmail.com"
                     >
                         sendtojsharma@gmail.com
