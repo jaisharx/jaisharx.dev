@@ -71,9 +71,10 @@ export default function Projects() {
                     url="https://dev-to-pied.vercel.app/"
                     githubUrl="https://github.com/jaisharx/dev.to"
                 >
-                    Built with react & nextjs, thus it’s performant by it’s very
-                    nature. <br /> It’s using a component library - chakra UI
-                    for it’s theme.
+                    Dev.to clone built by me from scratch (yeah, no YT tuts).{' '}
+                    <br />
+                    It's using react & nextjs for it's framework, and chakra UI
+                    for themeability.
                 </Project>
                 <Project
                     count="02"
@@ -82,9 +83,10 @@ export default function Projects() {
                     url="https://nextjs-org-website.vercel.app/"
                     githubUrl="https://github.com/jaisharx/nextjs.org"
                 >
-                    Built with react & nextjs, thus it’s performant by it’s very
-                    nature. <br /> It’s using a component library - chakra UI
-                    for it’s theme.
+                    Nextjs homepage website has a very clean & modern look to
+                    it.
+                    <br /> That's why I rebuilt it pixel perfect to see how
+                    close I can get.
                 </Project>
                 <Project
                     count="03"
@@ -93,9 +95,8 @@ export default function Projects() {
                     url="https://designwiz.vercel.app/"
                     githubUrl="https://github.com/jaisharx/designwiz"
                 >
-                    Built with react & nextjs, thus it’s performant by it’s very
-                    nature. <br /> It’s using a component library - chakra UI
-                    for it’s theme.
+                    I rebuilt a modern looking design based website. <br/>
+                    Achieving a score of 100 on a lighthouse audit as well.
                 </Project>
             </Container>
         </Box>
