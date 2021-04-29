@@ -1,30 +1,103 @@
-# jaisharx.dev | my onespot website for everything
-<img src="preview.png" alt="Preview Image">
+![Vercel Build Status](https://vercel-status.herokuapp.com/jaisharx/jaisharma.dev)
 
-## Getting started
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://jaisharma.dev/">
+    <img src="./public/favicon.svg" alt="Logo" width="80" height="80">
+  </a>
 
-I've build this using the latest and greatest [Nextjs]() framework of react.
+  <h2 align="center">jaisharma.dev</h2>
 
-It really helps you with pain point of building an app with react.
+  <p align="center">
+    Built with react & nextjs.
+  </p>  
+</p>
 
-You can close and run the website locally:
-```bash
-npm run dev
-# or
-yarn dev
-```
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">Preview</a>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-Then open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+<!-- ABOUT THE PROJECT -->
 
-## Learn More
+## Preview
 
-To learn more about Next.js, take a look at the following resources:
+[![Portfolio Homepage][product-screenshot]](https://jaisharma.dev/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- GETTING STARTED -->
 
-## Deploy on Vercel
+## Getting Started
 
-This website is deployed on [Vercel](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), the hosting platform from the very creators of Next.js.
+To get a local copy up and running follow these simple example steps.
 
-Check out our their [docs](https://nextjs.org/docs/deployment) for more details.
+### Installation
+
+1. Clone the repo
+    ```sh
+    git clone git@github.com:jaisharx/dev.to.git
+    ```
+2. Install NPM packages
+    ```sh
+    npm install
+    ```
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+Project repo is bootstraped from nextjs-starter template. It's using chakra UI as it's component library to handle most of the css needs. Design of this portfolio is created & iterated by me.
+
+_If you want to learn more about react, please refer to the [Reactjs Docs](https://reactjs.org/) or if you want to learn more about nextjs, please refer to the [Nextjs Docs](https://nextjs.org/)_
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+See the [open issues](https://github.com/jaisharx/jaisharma.dev/issues) for a list of proposed features (and known issues).
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+You're welcome to contribute to this repo, contributions are what make the open source community such an amazing place to be learn, inspire, and create.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+Email - sendtojsharma@gmail.com
+
+Project Link: [https://github.com/jaisharx/jaisharma.dev](https://github.com/jaisharx/jaisharma.dev)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+
+[product-screenshot]: ./public/homepage.png
