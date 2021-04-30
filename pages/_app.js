@@ -1,6 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react';
-import 'styles/globals.css';
+import NextHead from 'components/next-head';
 import content from 'lib/seo';
+import 'styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
     return (
