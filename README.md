@@ -1,9 +1,5 @@
 ![Vercel Build Status](https://vercel-status.herokuapp.com/jaisharx/jaisharma.dev)
 
-<p align="center">
-	<img src="./public/score.svg" width="800px">
-</p>
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
