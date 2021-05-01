@@ -20,9 +20,9 @@ const BulletDot = styled(Text)`
     color: #2dffc0;
 `;
 
-function Project({ count, title, imgSrc, url, githubUrl, children }) {
+function Project({ id, count, title, imgSrc, url, githubUrl, children }) {
     return (
-        <Box color="white" mt={28} as="article">
+        <Box id={id} color="white" mt={28} as="article">
             <Text fontSize={{ base: '5xl', lg: '8xl' }} fontFamily="Monoton">
                 Project {count}
             </Text>
@@ -73,6 +73,7 @@ export default function Projects() {
         <Box as="main">
             <Container>
                 <Project
+                    id="webapp"
                     count="01"
                     title="Dev.to Clone"
                     imgSrc="dev.to"
@@ -84,6 +85,7 @@ export default function Projects() {
                     for themeability.
                 </Project>
                 <Project
+                    id="website"
                     count="02"
                     title="Nextjs Website"
                     imgSrc="nextjs"

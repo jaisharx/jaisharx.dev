@@ -44,8 +44,9 @@ const SocialLink = styled(Link)`
     }
 `;
 
-const FancyUnderline = styled.span`
+const FancyUnderline = styled(Link)`
     position: relative;
+
     &::after {
         content: '';
         height: 8px;
@@ -55,6 +56,19 @@ const FancyUnderline = styled.span`
         position: absolute;
         bottom: 0;
         left: -2px;
+        transition: height 0.2s ease;
+    }
+
+    &:hover {
+        text-decoration: none;
+
+        &::after {
+            height: 2px;
+        }
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 3px #2dffc0;
     }
 `;
 
@@ -79,9 +93,9 @@ function LeftColumn() {
             >
                 I’m a Software Developer based in New Delhi, India. I specialize
                 in creating high quality{' '}
-                <FancyUnderline>websites</FancyUnderline> &{' '}
-                <FancyUnderline>webapps</FancyUnderline> made with ❤ of modern
-                web technologies.
+                <FancyUnderline href="#website">websites</FancyUnderline> &{' '}
+                <FancyUnderline href="#webapp">webapps</FancyUnderline> made with ❤ of
+                modern web technologies.
             </Text>
             <HStack spacing={{ base: 3, lg: 9 }} mt={10}>
                 <SocialLink
