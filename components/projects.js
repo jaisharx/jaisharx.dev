@@ -81,20 +81,20 @@ export default function Projects() {
                     githubUrl="https://github.com/jaisharx/dev.to"
                 >
                     Dev.to clone built by me from scratch (yeah, no YT tuts).
-                    It's using react & nextjs as its framework, and chakra UI
-                    for themeability.
+                    It's using react.js & next.js as its framework, and chakra
+                    UI for themeability.
                 </Project>
                 <Project
                     id="website"
                     count="02"
-                    title="Nextjs Website"
+                    title="Next.js Website"
                     imgSrc="nextjs"
                     url="https://nextjs-org-website.vercel.app/"
                     githubUrl="https://github.com/jaisharx/nextjs.org"
                 >
-                    Nextjs homepage website has a very clean & modern look to
-                    it. That's why I rebuilt it pixel perfect to see how close I
-                    can get.
+                    This repo is a recreation of the modern & sleek-looking
+                    Next.js homepage. I've tried to get this as pixel-perfect as
+                    possible.
                 </Project>
                 <Project
                     count="03"
@@ -103,8 +103,9 @@ export default function Projects() {
                     url="https://designwiz.vercel.app/"
                     githubUrl="https://github.com/jaisharx/designwiz"
                 >
-                    I rebuilt a modern looking design based website. Achieving a
-                    score of 100 on a lighthouse audit as well.
+                    Landing page of a modern-looking website re-built by me,
+                    scoring a score of 100/100 on a lighthouse audit (no kidding
+                    with perf).
                 </Project>
             </Container>
         </Box>
