@@ -4,6 +4,10 @@ import Container from './container';
 import NextImage from 'next/image';
 import '@fontsource/monoton';
 
+import devtoImageSrc from 'public/devto.png';
+import nextjsImageSrc from 'public/nextjs.png';
+import designwizImageSrc from 'public/designwiz.png';
+
 const CustomLink = styled(Link)`
     font-size: 1.5rem;
     font-weight: 500;
@@ -57,9 +61,10 @@ function Project({ id, count, title, imgSrc, url, githubUrl, children }) {
                 >
                     <NextImage
                         alt={title}
-                        src={`/${imgSrc}.png`}
+                        src={imgSrc}
                         width="1280"
                         height="800"
+                        placeholder="blur"
                         objectFit="cover"
                     />
                 </Link>
@@ -76,7 +81,7 @@ export default function Projects() {
                     id="webapp"
                     count="01"
                     title="Dev.to Clone"
-                    imgSrc="dev.to"
+                    imgSrc={devtoImageSrc}
                     url="https://dev-to-pied.vercel.app/"
                     githubUrl="https://github.com/jaisharx/dev.to"
                 >
@@ -88,7 +93,7 @@ export default function Projects() {
                     id="website"
                     count="02"
                     title="Next.js Website"
-                    imgSrc="nextjs"
+                    imgSrc={nextjsImageSrc}
                     url="https://nextjs-org-website.vercel.app/"
                     githubUrl="https://github.com/jaisharx/nextjs.org"
                 >
@@ -99,7 +104,7 @@ export default function Projects() {
                 <Project
                     count="03"
                     title="Designwiz"
-                    imgSrc="designwiz"
+                    imgSrc={designwizImageSrc}
                     url="https://designwiz.vercel.app/"
                     githubUrl="https://github.com/jaisharx/designwiz"
                 >

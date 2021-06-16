@@ -5,9 +5,11 @@ import Container from './container';
 
 import GmailIcon from './icons/gmail-icon.svg';
 import GithubIcon from './icons/github-icon.svg';
-import DevToIcon from './icons/dev.to-icon.svg';
+import DevToIcon from './icons/devto-icon.svg';
 import MediumIcon from './icons/medium-icon.svg';
 import DribbleIcon from './icons/dribble-icon.svg';
+
+import profileImageSrc from 'public/profile.jpg';
 
 const SocialLink = styled(Link)`
     display: flex;
@@ -94,8 +96,8 @@ function LeftColumn() {
                 I’m a Software Developer based in New Delhi, India. I specialize
                 in creating high quality{' '}
                 <FancyUnderline href="#website">websites</FancyUnderline> &{' '}
-                <FancyUnderline href="#webapp">webapps</FancyUnderline> made with ❤ of
-                modern web technologies.
+                <FancyUnderline href="#webapp">webapps</FancyUnderline> made
+                with ❤ of modern web technologies.
             </Text>
             <HStack spacing={{ base: 3, lg: 9 }} mt={10}>
                 <SocialLink
@@ -146,10 +148,9 @@ export default function Header() {
                     <LeftColumn />
                     <Box display={{ base: 'none', lg: 'block' }}>
                         <NextImage
-                            src="/profile.jpg"
-                            width="1246"
-                            height="1664"
                             alt="My Image"
+                            placeholder="blur"
+                            src={profileImageSrc}
                         />
                     </Box>
                 </Grid>
